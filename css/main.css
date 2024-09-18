@@ -1,0 +1,26 @@
+body{
+    background-color: black;
+}
+
+.banner{
+    color: white;
+    text-align: center;
+}
+.table{
+    color: white;
+    text-align: center;
+}
+.tr{
+    width: 120px;
+    height: 60px;
+}
+.element{
+    background-color: black;
+    border: 2px solid white;
+    color: white;
+    text-align: center;
+    width: 120px;
+    height: 120px;
+    position: static;
+}
+.element :hover
