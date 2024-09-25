@@ -11,3 +11,4 @@ La und Ac
 --> größe anpassen
 Impressum ++ (js)
 Übersicht Elementgruppen(Metalle,nicht Metalle)
+idee hell dunkel modus (js) (?)
