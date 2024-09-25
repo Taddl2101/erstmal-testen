@@ -1,46 +1,49 @@
-body{
-    background-color: black;
-    
+body {
+  background-color: black;
+  background: linear-gradient(hsl(0, 0%, 10%), hsl(0, 0%, 37%));
+  background: linear-gradient(hsl(0, 0%, 10%) 50%, hsl(0, 0%, 37%) 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
-ul{
-    position: fixed;
-    margin: 0px 10px 10px 10px;
-    width: 140px;
-    height: 300px;
-    color: white;
-    border: 2px dotted white;
+ul {
+  position: fixed;
+  margin: 0px 10px 10px 10px;
+  width: 140px;
+  height: 300px;
+  color: white;
+  border: 2px dotted white;
 }
-.rahmen{
-    position: fixed;
-    background-color: black;
-    margin: 0 20px 10px 220px;
-    padding: 0 10px 0  10px;
-    height: 550px;
-    width: 1000px;
-    border: 2px solid white;
-    
+.rahmen {
+  position: fixed;
+
+  margin: 0 20px 10px 220px;
+  padding: 0 10px 0 10px;
+  height: 550px;
+  width: 1000px;
+  border: 2px solid white;
 }
-.banner{
-    color: white;
-    text-align: center;
+.banner {
+  color: white;
+  text-align: center;
 }
-.table{
-    color: white;
-    text-align: center;
+.table {
+  color: white;
+  text-align: center;
 }
-.tr{
-    width: 50px;
-    height: 60px;
+.tr {
+  width: 50px;
+  height: 60px;
 }
-.element{
-    background-color: black;
-    border: 2px solid white;
-    color: white;
-    text-align: center;
-    width: 50px;
-    height: 50px;
+.element {
+  background-color: black;
+  border: 2px solid white;
+  color: white;
+  text-align: center;
+  width: 50px;
+  height: 50px;
 }
-.element:hover{
-    background-color: rgb(187, 0, 0);
-    color: black;
+.element:hover {
+  background-color: rgb(187, 0, 0);
+  color: black;
 }
