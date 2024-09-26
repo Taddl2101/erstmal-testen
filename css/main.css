@@ -39,10 +39,9 @@ table {
   font-size: 1.2em;
   float: left;
 }
-
 .tr {
   width: 50px;
-  height: 60px;
+  height: 5vh;
 }
 .element {
   background-color: black;
@@ -53,16 +52,32 @@ table {
   height: 6.3vh;
   line-height: 6.3vh;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 0px 8px rgba(170, 170, 170, 0.2);
 }
-
+.non-elemnts{
+  position: relative;
+  width: 6.3vh;
+  height: 6.3vh;
+  line-height: 6.3vh; 
+}
 .element:hover {
   transform: scale(1.5);
-
   z-index: 1;
-  box-shadow: 0 0px 16px rgba(255, 255, 255, 0.4);
+  box-shadow: 0 0px 30px rgba(170, 170, 170, 0.4);
 }
 #box {
   width: 20vh;
   height: 20.05vh;
+}
+.hg2{
+  margin-top: -20.05vh;
+}
+h3{
+  position: relative;
+  width: 20vh;
+  height: 5vh;
+  left: 3vh;
+  top: 1vh;
+  color: white;
+  font-size: 1.2em;
 }
