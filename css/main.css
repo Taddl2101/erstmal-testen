@@ -54,13 +54,14 @@ table {
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   box-shadow: 0px 0px 8px rgba(170, 170, 170, 0.2);
 }
-.non-elemnts{
+.non-elemnts {
   position: relative;
   width: 6.3vh;
   height: 6.3vh;
-  line-height: 6.3vh; 
+  line-height: 6.3vh;
 }
 .element:hover {
+  cursor: pointer;
   transform: scale(1.5);
   z-index: 1;
   box-shadow: 0 0px 30px rgba(170, 170, 170, 0.4);
@@ -69,10 +70,10 @@ table {
   width: 20vh;
   height: 20.05vh;
 }
-.hg2{
+.hg2 {
   margin-top: -20.05vh;
 }
-h3{
+h3 {
   position: relative;
   width: 20vh;
   height: 5vh;
