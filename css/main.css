@@ -43,8 +43,8 @@ table {
   float: left;
 }
 .tr {
-  width: 50px;
-  height: 5vh;
+  width: 6.3vh;
+  height: 6.3vh;
 }
 .element {
   background-color: black;
@@ -69,6 +69,7 @@ table {
   transition: transform 0.13s ease-in-out, box-shadow 0.3s ease-in-out;
   float: left;
   margin-right: 1px;
+  margin-bottom: 1px;
 }
 .non-elemnts {
   position: relative;
@@ -89,21 +90,21 @@ table {
 h3 {
   position: relative;
   width: 10vh;
-  height: 5vh;
+  height: 3vh;
   left: 3vh;
   top: 1vh;
   color: white;
   font-size: 1.2em;
 }
-.La3 {
-}
-.Ak3 {
-  display: block;
-}
 h3:hover {
   cursor: default;
 }
-.PlatzLa {
+h4{
+  color: white;
+  text-align: left;
+  font-size: 1.2em;
+  font-weight: bold;
+ 
 }
 .edelgaseBtn {
   color: white;
@@ -112,6 +113,7 @@ h3:hover {
   height: 5vh;
   width: 15vh;
 }
+
 .edelgaseBtn:hover {
   background-color: hsl(0, 0%, 5%);
 }
