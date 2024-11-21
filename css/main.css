@@ -13,79 +13,19 @@ body {
   margin: 0;
   padding: 0;
 }
-ul {
+.menue {
   position: fixed;
   margin: 0px 10px 10px 10px;
-  width: 15vh;
-  height: 77vh;
+  width: 23vh;
+  height: 78vh;
   color: white;
   border: 2px solid white;
-}
-table:hover {
-  cursor: default;
-}
-.rahmen {
-  position: fixed;
-  margin: 0 20px 10px 220px;
-  padding: 0 10px 0 10px;
-  height: 77vh;
-  width: 132vh;
-  border: 2px solid white;
+  margin-top: 2.3vh;
 }
 .banner {
   color: white;
   text-align: center;
-}
-table {
-  color: white;
-  text-align: center;
-  font-size: 1.2em;
-  float: left;
-}
-.tr {
-  width: 6.3vh;
-  height: 6.3vh;
-}
-.element {
-  background-color: black;
-  position: relative;
-  color: white;
-  text-align: center;
-  width: 6.3vh;
-  height: 6.3vh;
-  line-height: 6.3vh;
-  box-shadow: 0px 0px 8px rgba(170, 170, 170, 0.2);
-  transition: transform 0.13s ease-in-out, box-shadow 0.3s ease-in-out;
-}
-.elementx {
-  background-color: black;
-  position: relative;
-  color: white;
-  text-align: center;
-  width: 6.3vh;
-  height: 6.3vh;
-  line-height: 6.3vh;
-  box-shadow: 0px 0px 8px rgba(170, 170, 170, 0.2);
-  transition: transform 0.13s ease-in-out, box-shadow 0.3s ease-in-out;
-  float: left;
-  margin-right: 1px;
-  margin-bottom: 1px;
-}
-.non-elemnts {
-  position: relative;
-  width: 6.3vh;
-  height: 6.3vh;
-  line-height: 6.3vh;
-}
-.element:hover {
-  cursor: pointer;
-  transform: scale(1.5);
-  z-index: 1;
-  box-shadow: 0 0px 30px rgba(170, 170, 170, 0.4);
-}
-
-.hg2 {
-  margin-top: -20.05vh;
+  height: 7vh;
 }
 h3 {
   position: relative;
@@ -104,21 +44,32 @@ h4{
   text-align: left;
   font-size: 1.2em;
   font-weight: bold;
- 
 }
-.edelgaseBtn {
+/*Farben-Effekte*/
+
+.Btn {
   color: white;
   background-color: black;
-  border: 2px solid rgb(255, 255, 255);
+  text-align: center;
   height: 5vh;
   width: 15vh;
+  margin-left: 4vh;
+  transition: box-shadow 0.3s ease-in-out;
+  box-shadow: inset 0 0 0 0 green, 0 0 0 0 green;
 }
+.Btn:hover {
+  cursor: pointer;
+  box-shadow: inset 0 0 10px 1px green, 0 0 10px 1px green;
+  border: black
+}
+.Btn:active{
 
-.edelgaseBtn:hover {
-  background-color: hsl(0, 0%, 5%);
 }
-#b1 {
-  margin-top: 0vh;
+.Btn:active:#edelgase{
+  box-shadow: inset 0 0 10px 1px green, 0 0 15px 1px green;
+} 
+.edelgaseBtn {
+  border: 2px solid green;
 }
 #edelgase {
   transition: box-shadow 0.3s ease-in-out;
