@@ -18,7 +18,7 @@
         <li>Nr2</li>
         <li>Impressum</li>
       </ul>
-      <button class="Btn edelgaseBtn" onclick="">Edelgase</button>
+      <button id="edelgaseBtn" onclick="changeEdelgaseColor()">Edelgase</button>
     </div>
     <div class="rahmen">
       <!--Table for PSE-->
@@ -46,7 +46,7 @@
           </tr>
           <!--Elements-->
           <tr>
-            <td class="element" id="edelgase">H</td>
+            <td class="element">H</td>
             <td class="non-element"></td>
             <td class="non-element"></td>
             <td class="non-element"></td>
@@ -63,11 +63,11 @@
             <td class="non-element"></td>
             <td class="non-element"></td>
             <td class="non-element"></td>
-            <td class="element">He</td>
+            <td class="element edelgase">He</td>
           </tr>
 
           <tr>
-            <td class="element" id="edelgase">Li</td>
+            <td class="element">Li</td>
             <td class="element">Be</td>
             <td class="non-element"></td>
             <td class="non-element"></td>
@@ -84,7 +84,7 @@
             <td class="element">N</td>
             <td class="element">O</td>
             <td class="element">F</td>
-            <td class="element">Ne</td>
+            <td class="element edelgase">Ne</td>
           </tr>
           <tr>
             <td class="element">Na</td>
@@ -104,7 +104,7 @@
             <td class="element">P</td>
             <td class="element">S</td>
             <td class="element">Cl</td>
-            <td class="element">Ar</td>
+            <td class="element edelgase">Ar</td>
           </tr>
           <tr>
             <td class="element">K</td>
@@ -223,5 +223,6 @@
         </table>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>

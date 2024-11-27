@@ -46,7 +46,7 @@ h4 {
 }
 /*Farben-Effekte*/
 
-.Btn {
+button {
   color: white;
   background-color: black;
   text-align: center;
@@ -54,35 +54,46 @@ h4 {
   width: 15vh;
   margin-left: 4vh;
   transition: box-shadow 0.3s ease-in-out;
+}
+
+/*EdelgaseBtn */
+
+#edelgaseBtn {
+  border: 2px solid green;
   box-shadow: inset 0 0 0 0 green, 0 0 0 0 green;
 }
-.Btn:hover {
+
+#edelgaseBtn:hover {
   cursor: pointer;
   box-shadow: inset 0 0 10px 1px green, 0 0 10px 1px green;
-  border: black;
+  border: bl ack;
 }
-.Btn:active {
-}
-.Btn:active:#edelgase {
-  box-shadow: inset 0 0 10px 1px green, 0 0 15px 1px green;
-}
-.edelgaseBtn {
-  border: 2px solid green;
-}
-#edelgase {
+/* Edelgase */
+td.element.edelgase {
   transition: box-shadow 0.3s ease-in-out;
   box-shadow: inset 0 0 0 0 green, 0 0 0 0 green;
 }
-#edelgase:hover {
+
+td.element.edelgase:hover {
   position: absolute;
   box-shadow: inset 0 0 10px 1px green, 0 0 15px 1px green;
 }
-#metalle:hover {
+/* extra class wenn button gedrückt wird für cleanen hover effekt */
+td.element.edelgase.highlight:hover {
+  transition: transform 0.13s ease-in-out;
+}
+
+/*Metalle*/
+.metalle:hover {
   background-color: blue;
 }
-#nichtMetalle:hover {
+
+/*NichtMetalle*/
+.nichtMetalle:hover {
   background-color: red;
 }
-#halogene:hover {
+
+/*Halogene*/
+.halogene:hover {
   background-color: yellow;
 }

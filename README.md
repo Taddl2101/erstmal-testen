@@ -18,3 +18,16 @@ Diskussion:
 
 alles zu vh gemacht -> trotzdem Kacke
 evtl % nutzen
+
+// bezüglich der änderungen zum edelgas-effekt
+
+mittels javascript änderung der farbe durch click des buttons ("toogle")
+hover effekt hinzugefügt
+statt id class für zb edelgase
+könnte man kopieren für andere elemente (namen / farben ändern obviously)
+script.js noch im html ordner , da lassen ich mach das später , gab probleme damit
+nur 3 elemente ausgewählt --> restlich noch hinzufügen nach bsp der anderen
+
+maybe machen dass wenn ein knopf gedrückt wird alle anderen ausblassen (?)
+
+hab noch bisschen aufgeräumt und kommentiert
