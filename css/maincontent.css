@@ -1,47 +1,47 @@
 .rahmen {
-    position: fixed;
-    margin: 0 20px 10px 220px;
-    padding: 0 10px 0 10px;
-    height: 78vh;
-    width: 141vh;
-    border: 2px solid white;
+  position: fixed;
+  margin: 0 2vh 1vh 25vh;
+  padding: 0 1vh 0 1vh;
+  height: 78vh;
+  width: 141vh;
+  border: 0.3vh solid white;
 }
 table {
-    color: white;
-    text-align: center;
-    font-size: 1.2em;
-    float: left;
+  color: white;
+  text-align: center;
+  font-size: 1.2em;
+  float: left;
 }
 table:hover {
-    cursor: default;
-  }
+  cursor: default;
+}
 .tr {
-    width: 7.3vh;
-    height: 5vh;
+  width: 7.3vh;
+  height: 5vh;
 }
 .element {
-    background-color: black;
-    position: relative;
-    color: white;
-    text-align: center;
-    width: 7.3vh;
-    height: 7.3vh;
-    line-height: 7.3vh;
-    box-shadow: 0px 0px 8px rgba(170, 170, 170, 0.2);
-    transition: transform 0.13s ease-in-out, box-shadow 0.3s ease-in-out;
+  background-color: black;
+  position: relative;
+  color: white;
+  text-align: center;
+  width: 7.3vh;
+  height: 7.3vh;
+  line-height: 7.3vh;
+  box-shadow: 0 0 0.8vh rgba(170, 170, 170, 0.2);
+  transition: transform 0.13s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 .non-element {
-    position: relative;
-    width: 7.3vh;
-    height: 7.3vh;
-    line-height: 7.3vh;
+  position: relative;
+  width: 7.3vh;
+  height: 7.3vh;
+  line-height: 7.3vh;
 }
 .element:hover {
-    cursor: pointer;
-    transform: scale(1.5);
-    z-index: 1;
-    box-shadow: 0 0px 30px rgba(170, 170, 170, 0.4);
+  cursor: pointer;
+  transform: scale(1.5);
+  z-index: 1;
+  box-shadow: 0 0 3vh rgba(170, 170, 170, 0.4);
 }
 .Abstand {
-    margin-top: 0.4vh;
+  margin-top: 0.4vh;
 }

@@ -13,3 +13,8 @@ Impressum ++ (js)
 Übersicht Elementgruppen(Metalle,nicht Metalle)
 idee hell dunkel modus (js)
 Formales: schriftarten, Farben, indexdatei
+
+Diskussion:
+
+alles zu vh gemacht -> trotzdem Kacke
+evtl % nutzen
