@@ -19,15 +19,19 @@
         <li>Nr2</li>
         <li>Impressum</li>
       </ul>
-      <button id="edelgaseBtn" onclick="changeEdelgaseColor()">Edelgase</button>
+      <button id="alkalimetalleBtn" onclick="changeAlkalimetalleColor()">Alkalimetalle</button>
+      <button id="erdalkalimetalleBtn" onclick="changeErdalkalimetalleColor()">Erdalkalimetalle</button>
+      <button id="übergangsmetalleBtn" onclick="changeÜbergangsmetalleColor()">Übergangsmetalle</button>
+      <button id="metalleBtn" onclick="changeMetalleColor()">Metalle</button>
+      <button id="halbmetalleBtn" onclick="changeHalbmetalleColor()">Halbmetalle</button>
+      <button id="nichtmetalleBtn" onclick="changeNichtmetalleColor()">Nichtmetalle</button>
       <button id="halogeneBtn" onclick="changeHalogeneColor()">Halogene</button>
       <button id="edelgaseBtn" onclick="changeEdelgaseColor()">Edelgase</button>
-      <button id="edelgaseBtn" onclick="changeEdelgaseColor()">Edelgase</button>
-      <button id="edelgaseBtn" onclick="changeEdelgaseColor()">Edelgase</button>
-      <button id="edelgaseBtn" onclick="changeEdelgaseColor()">Edelgase</button>
-      <button id="edelgaseBtn" onclick="changeEdelgaseColor()">Edelgase</button>
-      <button id="edelgaseBtn" onclick="changeEdelgaseColor()">Edelgase</button>
-      <button id="edelgaseBtn" onclick="changeEdelgaseColor()">Edelgase</button>
+      <button id="lanthanoideBtn" onclick="changeLanthanoideColor()">Lanthanoide</button>
+      <button id="actinoideBtn" onclick="changeActinoideColor()">Actinoide</button>
+      <button id="AlleBtn" onclick="changeeAlleColor()">Alle</button>
+
+
     </div>
     <div class="rahmen">
       <!--Table for PSE-->
@@ -55,7 +59,7 @@
           </tr>
           <!--Elements-->
           <tr>
-            <td class="element">H</td>
+            <td class="element nichtmetalle">H</td>
             <td class="non-element"></td>
             <td class="non-element"></td>
             <td class="non-element"></td>
@@ -75,8 +79,8 @@
             <td class="element edelgase">He</td>
           </tr>
           <tr>
-            <td class="element">Li</td>
-            <td class="element">Be</td>
+            <td class="element alkalimetalle">Li</td>
+            <td class="element erdalkalimetalle">Be</td>
             <td class="non-element"></td>
             <td class="non-element"></td>
             <td class="non-element"></td>
@@ -87,16 +91,16 @@
             <td class="non-element"></td>
             <td class="non-element"></td>
             <td class="non-element"></td>
-            <td class="element">B</td>
-            <td class="element">C</td>
-            <td class="element">N</td>
-            <td class="element">O</td>
+            <td class="element halbmetalle">B</td>
+            <td class="element nichtmetalle">C</td>
+            <td class="element nichtmetalle">N</td>
+            <td class="element nichtmetalle">O</td>
             <td class="element halogene">F</td>
             <td class="element edelgase">Ne</td>
           </tr>
           <tr>
-            <td class="element">Na</td>
-            <td class="element">Mg</td>
+            <td class="element alkalimetalle">Na</td>
+            <td class="element erdalkalimetalle">Mg</td>
             <td class="non-element"><b>1.Ng</b></td>
             <td class="non-element"><b>2.Ng</b></td>
             <td class="non-element"><b>3.Ng</b></td>
@@ -107,92 +111,92 @@
             <td class="non-element"><b>8.Ng</b></td>
             <td class="non-element"><b>9.Ng</b></td>
             <td class="non-element"><b>10.Ng</b></td>
-            <td class="element">Al</td>
-            <td class="element">Si</td>
-            <td class="element">P</td>
-            <td class="element">S</td>
+            <td class="element metalle">Al</td>
+            <td class="element halbmetalle">Si</td>
+            <td class="element nichtmetalle">P</td>
+            <td class="element nichtmetalle">S</td>
             <td class="element halogene">Cl</td>
             <td class="element edelgase">Ar</td>
           </tr>
           <tr>
-            <td class="element">K</td>
-            <td class="element">Ca</td>
-            <td class="element">Sc</td>
-            <td class="element">Ti</td>
-            <td class="element">V</td>
-            <td class="element">Cr</td>
-            <td class="element">Mn</td>
-            <td class="element">Fe</td>
-            <td class="element">Co</td>
-            <td class="element">Ni</td>
-            <td class="element">Cu</td>
-            <td class="element">Zn</td>
-            <td class="element">Ga</td>
-            <td class="element">Ge</td>
-            <td class="element">As</td>
-            <td class="element">Se</td>
+            <td class="element alkalimetalle">K</td>
+            <td class="element erdalkalimetalle">Ca</td>
+            <td class="element übergangsmetalle">Sc</td>
+            <td class="element übergangsmetalle">Ti</td>
+            <td class="element übergangsmetalle">V</td>
+            <td class="element übergangsmetalle">Cr</td>
+            <td class="element übergangsmetalle">Mn</td>
+            <td class="element übergangsmetalle">Fe</td>
+            <td class="element übergangsmetalle">Co</td>
+            <td class="element übergangsmetalle">Ni</td>
+            <td class="element übergangsmetalle">Cu</td>
+            <td class="element übergangsmetalle">Zn</td>
+            <td class="element metalle">Ga</td>
+            <td class="element halbmetalle">Ge</td>
+            <td class="element halbmetalle">As</td>
+            <td class="element nichtmetalle">Se</td>
             <td class="element halogene">Br</td>
             <td class="element edelgase">Kr</td>
           </tr>
           <tr>
-            <td class="element">Rb</td>
-            <td class="element">Sr</td>
-            <td class="element">Y</td>
-            <td class="element">Zr</td>
-            <td class="element">Nb</td>
-            <td class="element">Mo</td>
-            <td class="element">Tc</td>
-            <td class="element">Ru</td>
-            <td class="element">Rh</td>
-            <td class="element">Pd</td>
-            <td class="element">Ag</td>
-            <td class="element">Cd</td>
-            <td class="element">In</td>
-            <td class="element">Sn</td>
-            <td class="element">Sb</td>
-            <td class="element">Te</td>
+            <td class="element alkalimetalle">Rb</td>
+            <td class="element erdalkalimetalle">Sr</td>
+            <td class="element übergangsmetalle">Y</td>
+            <td class="element übergangsmetalle">Zr</td>
+            <td class="element übergangsmetalle">Nb</td>
+            <td class="element übergangsmetalle">Mo</td>
+            <td class="element übergangsmetalle">Tc</td>
+            <td class="element übergangsmetalle">Ru</td>
+            <td class="element übergangsmetalle">Rh</td>
+            <td class="element übergangsmetalle">Pd</td>
+            <td class="element übergangsmetalle">Ag</td>
+            <td class="element übergangsmetalle">Cd</td>
+            <td class="element metalle">In</td>
+            <td class="element metalle">Sn</td>
+            <td class="element halbmetalle">Sb</td>
+            <td class="element halbmetalle">Te</td>
             <td class="element halogene">I</td>
             <td class="element edelgase">Xe</td>
           </tr>
           <tr>
-            <td class="element">Cs</td>
-            <td class="element">B</td>
-            <td class="element" id="special1">La</td>
-            <td class="element">Hf</td>
-            <td class="element">Ta</td>
-            <td class="element">W</td>
-            <td class="element">Re</td>
-            <td class="element">Os</td>
-            <td class="element">Ir</td>
-            <td class="element">Pt</td>
-            <td class="element">Au</td>
-            <td class="element">Hg</td>
-            <td class="element">Ti</td>
-            <td class="element">Pb</td>
-            <td class="element">Bi</td>
-            <td class="element">Po</td>
+            <td class="element alkalimetalle">Cs</td>
+            <td class="element erdalkalimetalle">B</td>
+            <td class="element lanthanoide" id="special1">La</td>
+            <td class="element übergangsmetalle">Hf</td>
+            <td class="element übergangsmetalle">Ta</td>
+            <td class="element übergangsmetalle">W</td>
+            <td class="element übergangsmetalle">Re</td>
+            <td class="element übergangsmetalle">Os</td>
+            <td class="element übergangsmetalle">Ir</td>
+            <td class="element übergangsmetalle">Pt</td>
+            <td class="element übergangsmetalle">Au</td>
+            <td class="element übergangsmetalle">Hg</td>
+            <td class="element metalle">Ti</td>
+            <td class="element metalle">Pb</td>
+            <td class="element metalle">Bi</td>
+            <td class="element halbmetalle">Po</td>
             <td class="element halogene">At</td>
             <td class="element edelgase">Rn</td>
           </tr>
           <tr>
-            <td class="element">Fr</td>
-            <td class="element">Ra</td>
-            <td class="element" id="special2">Ac</td>
-            <td class="element">Rf</td>
-            <td class="element">Db</td>
-            <td class="element">Sg</td>
-            <td class="element">Bh</td>
-            <td class="element">Hs</td>
-            <td class="element">Mt</td>
-            <td class="element">Ds</td>
-            <td class="element">Rg</td>
-            <td class="element">Cn</td>
-            <td class="element">Nh</td>
-            <td class="element">Fl</td>
-            <td class="element">Mc</td>
-            <td class="element">Lv</td>
-            <td class="element">Ts</td>
-            <td class="element">Og</td>
+            <td class="element alkalimetalle">Fr</td>
+            <td class="element erdalkalimetalle">Ra</td>
+            <td class="element actinoide" id="special2">Ac</td>
+            <td class="element übergangsmetalle">Rf</td>
+            <td class="element übergangsmetalle">Db</td>
+            <td class="element übergangsmetalle">Sg</td>
+            <td class="element übergangsmetalle">Bh</td>
+            <td class="element übergangsmetalle">Hs</td>
+            <td class="element übergangsmetalle">Mt</td>
+            <td class="element übergangsmetalle">Ds</td>
+            <td class="element übergangsmetalle">Rg</td>
+            <td class="element übergangsmetalle">Cn</td>
+            <td class="element nix">Nh</td>
+            <td class="element nix">Fl</td>
+            <td class="element nix">Mc</td>
+            <td class="element nix">Lv</td>
+            <td class="element nix">Ts</td>
+            <td class="element nix">Og</td>
           </tr>
         </table>
         <table class="Abstand">
@@ -213,20 +217,20 @@
             <td class="element lanthanoide">Lu</td>
           </tr>
           <tr>
-            <td class="element akthanoide">Th</td>
-            <td class="element akthanoide">Pa</td>
-            <td class="element akthanoide">U</td>
-            <td class="element akthanoide">Np</td>
-            <td class="element akthanoide">Pu</td>
-            <td class="element akthanoide">Am</td>
-            <td class="element akthanoide">Cm</td>
-            <td class="element akthanoide">Bk</td>
-            <td class="element akthanoide">Cf</td>
-            <td class="element akthanoide">Es</td>
-            <td class="element akthanoide">Fm</td>
-            <td class="element akthanoide">Md</td>
-            <td class="element akthanoide">No</td>
-            <td class="element akthanoide">Lw</td>
+            <td class="element actinoide">Th</td>
+            <td class="element actinoide">Pa</td>
+            <td class="element actinoide">U</td>
+            <td class="element actinoide">Np</td>
+            <td class="element actinoide">Pu</td>
+            <td class="element actinoide">Am</td>
+            <td class="element actinoide">Cm</td>
+            <td class="element actinoide">Bk</td>
+            <td class="element actinoide">Cf</td>
+            <td class="element actinoide">Es</td>
+            <td class="element actinoide">Fm</td>
+            <td class="element actinoide">Md</td>
+            <td class="element actinoide">No</td>
+            <td class="element actinoide">Lw</td>
           </tr>
         </table>
       </div>
