@@ -203,7 +203,7 @@ function changeActinoideColor() {
 }
 
 /*
-!!!LANGWEILIGE VERSION!!! (erstmal alles nur für la + ac)
+!!!LANGWEILIGE VERSION!!!
 
 function changeAlleColorOff() {
   const lanthanoideElements = document.querySelectorAll(".lanthanoide");
@@ -240,7 +240,6 @@ function changeAlleColorOff() {
 }
  */
 
-// GEILE VERSION (in Arbeit)
 //Alle Btn
 
 function changeAlleColorOff() {
@@ -277,5 +276,3 @@ function changeAlleColorOff() {
     actinoideActive = !actinoideActive;
   }
 }
-
-/*BRAUCHT NOCH ZWEI KLICKS AHHHHHHHHHHHHHHHHH*/
