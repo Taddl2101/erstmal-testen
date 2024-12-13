@@ -25,3 +25,17 @@ html seiten discussion
 schriftarten
 js verlinkung
 alle button js
+
+# zwischenspeicher
+
+/_ actinoideElements.forEach((element) => {
+element.style.boxShadow =
+"inset 0 0 8px 1px rgb(117, 190, 233), 0 0 5px 1px rgb(117, 190, 233)";
+element.classList.add("highlightedel");
+});
+lanthanoideElements.forEach((element) => {
+element.style.boxShadow =
+"inset 0 0 8px 1px rgb(0, 99, 156), 0 0 5px 1px rgb(0, 99, 156)";
+element.classList.add("highlightedel");
+});
+_ /
