@@ -202,7 +202,9 @@ function changeActinoideColor() {
   });
 }
 
-function changeAlleColorOff() {
+//AlleBtn
+
+function changeAlleColor() {
   const alleElemente = document.querySelectorAll(".element");
 
   alleElemente.forEach((element) => {
@@ -211,9 +213,59 @@ function changeAlleColorOff() {
   });
 
   setTimeout(() => {
+    const alkalimetalleElements = document.querySelectorAll(".alkalimetalle");
+    const erdalkalimetalleElements =
+      document.querySelectorAll(".erdalkalimetalle");
+    const übergangsmetalleElements =
+      document.querySelectorAll(".übergangsmetalle");
+    const metalleElements = document.querySelectorAll(".metalle");
+    const halbmetalleElements = document.querySelectorAll(".halbmetalle");
+    const nichtmetalleElements = document.querySelectorAll(".nichtmetalle");
+    const halogeneElements = document.querySelectorAll(".halogene");
+    const edelgaseElements = document.querySelectorAll(".edelgase");
     const lanthanoideElements = document.querySelectorAll(".lanthanoide");
     const actinoideElements = document.querySelectorAll(".actinoide");
 
+    alkalimetalleElements.forEach((element) => {
+      element.style.boxShadow =
+        "inset 0 0 8px 1px rgb(42, 233, 99), 0 0 5px 1px rgb(42, 233, 99)";
+      element.classList.add("highlightedel");
+    });
+    erdalkalimetalleElements.forEach((element) => {
+      element.style.boxShadow =
+        "inset 0 0 8px 1px rgb(10, 172, 24), 0 0 5px 1px rgb(10, 172, 24)";
+      element.classList.add("highlightedel");
+    });
+    übergangsmetalleElements.forEach((element) => {
+      element.style.boxShadow =
+        "inset 0 0 8px 1px rgb(0, 50, 187), 0 0 5px 1px rgb(0, 50, 187)";
+      element.classList.add("highlightedel");
+    });
+    metalleElements.forEach((element) => {
+      element.style.boxShadow =
+        "inset 0 0 8px 3px rgb(95, 0, 95), 0 0 5px 1px rgb(95, 0, 95)";
+      element.classList.add("highlightedel");
+    });
+    halbmetalleElements.forEach((element) => {
+      element.style.boxShadow =
+        "inset 0 0 8px 1px rgb(168, 11, 182), 0 0 5px 1px rgb(168, 11, 182)";
+      element.classList.add("highlightedel");
+    });
+    nichtmetalleElements.forEach((element) => {
+      element.style.boxShadow =
+        "inset 0 0 8px 1px rgb(207, 15, 15), 0 0 5px 1px rgb(207, 15, 15)";
+      element.classList.add("highlightedel");
+    });
+    halogeneElements.forEach((element) => {
+      element.style.boxShadow =
+        "inset 0 0 8px 1px rgb(247, 144, 187), 0 0 5px 1px rgb(247, 144, 187)";
+      element.classList.add("highlightedel");
+    });
+    edelgaseElements.forEach((element) => {
+      element.style.boxShadow =
+        "inset 0 0 8px 1px rgb(253, 76, 106), 0 0 5px 1px rgb(253, 76, 106)";
+      element.classList.add("highlightedel");
+    });
     actinoideElements.forEach((element) => {
       element.style.boxShadow =
         "inset 0 0 8px 1px rgb(117, 190, 233), 0 0 5px 1px rgb(117, 190, 233)";
@@ -225,4 +277,75 @@ function changeAlleColorOff() {
       element.classList.add("highlightedel");
     });
   }, 300);
+  if (!alkalimetalleActive) {
+    alkalimetalleActive = !alkalimetalleActive;
+  }
+  if (!erdalkalimetalleActive) {
+    erdalkalimetalleActive = !erdalkalimetalleActive;
+  }
+  if (!übergangsmetalleActive) {
+    übergangsmetalleActive = !übergangsmetalleActive;
+  }
+  if (!metalleActive) {
+    metalleActive = !metalleActive;
+  }
+  if (!halbmetalleActive) {
+    halbmetalleActive = !halbmetalleActive;
+  }
+  if (!nichtmetalleActive) {
+    nichtmetalleActive = !nichtmetalleActive;
+  }
+  if (!halogeneActive) {
+    halogeneActive = !halogeneActive;
+  }
+  if (!edelgaseActive) {
+    edelgaseActive = !edelgaseActive;
+  }
+  if (!lanthanoideActive) {
+    lanthanoideActive = !lanthanoideActive;
+  }
+  if (!actinoideActive) {
+    actinoideActive = !actinoideActive;
+  }
+}
+
+//offBtn
+
+function reset() {
+  const alleElemente = document.querySelectorAll(".element");
+
+  alleElemente.forEach((element) => {
+    element.style.boxShadow = "";
+    element.classList.remove("highlightedel");
+  });
+  if (alkalimetalleActive) {
+    alkalimetalleActive = !alkalimetalleActive;
+  }
+  if (erdalkalimetalleActive) {
+    erdalkalimetalleActive = !erdalkalimetalleActive;
+  }
+  if (übergangsmetalleActive) {
+    übergangsmetalleActive = !übergangsmetalleActive;
+  }
+  if (metalleActive) {
+    metalleActive = !metalleActive;
+  }
+  if (halbmetalleActive) {
+    halbmetalleActive = !halbmetalleActive;
+  }
+  if (nichtmetalleActive) {
+    nichtmetalleActive = !nichtmetalleActive;
+  }
+  if (halogeneActive) {
+    halogeneActive = !halogeneActive;
+  }
+  if (edelgaseActive) {
+    edelgaseActive = !edelgaseActive;
+  }
+  if (lanthanoideActive) {
+    lanthanoideActive = !lanthanoideActive;
+  }
+  if (actinoideActive) {
+    actinoideActive = !actinoideActive;
+  }
 }

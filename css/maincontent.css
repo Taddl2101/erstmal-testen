@@ -37,7 +37,6 @@ table:hover {
   line-height: 7.3vh;
 }
 .element:hover {
-  cursor: pointer;
   transform: scale(1.5);
   z-index: 1;
   box-shadow: 0 0 3vh rgba(170, 170, 170, 0.4);

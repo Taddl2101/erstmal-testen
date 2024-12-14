@@ -9,7 +9,7 @@ gutes pse Bild
 
 # To-do
 
->- hell dunkel modus (js)
+- hell dunkel modus (js)
 - Formales: schriftarten, Farben, indexdatei
 - farbanpassung lila
 - alle button finishen
@@ -19,6 +19,8 @@ gutes pse Bild
 alles zu vh gemacht -> trotzdem Kacke
 --> % nutzen !!!
 Impressum ++ (js)
+
+mayby eine variable für alle xActive machewn --> weniger code
 
 # Samstag
 
