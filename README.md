@@ -9,9 +9,10 @@ gutes pse Bild
 
 # To-do
 
-hell dunkel modus (js)
-Formales: schriftarten, Farben, indexdatei
-farbanpassung lila
+>- hell dunkel modus (js)
+- Formales: schriftarten, Farben, indexdatei
+- farbanpassung lila
+- alle button finishen
 
 # Diskussion
 

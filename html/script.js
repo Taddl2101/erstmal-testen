@@ -202,30 +202,18 @@ function changeActinoideColor() {
   });
 }
 
-/*
-!!!LANGWEILIGE VERSION!!!
-
 function changeAlleColorOff() {
-  const lanthanoideElements = document.querySelectorAll(".lanthanoide");
-  const actinoideElements = document.querySelectorAll(".actinoide");
+  const alleElemente = document.querySelectorAll(".element");
 
-  if (lanthanoideActive && actinoideActive) {
-    lanthanoideElements.forEach((element) => {
-      if (lanthanoideActive) {
-        element.style.boxShadow = "";
-        element.classList.remove("highlightedel");
-      }
-    });
-    actinoideElements.forEach((element) => {
-      if (actinoideActive) {
-        element.style.boxShadow = "";
-        element.classList.remove("highlightedel");
-      }
-    });
-    
-    lanthanoideActive = false;
-    actinoideActive = false;
-  } else {
+  alleElemente.forEach((element) => {
+    element.style.boxShadow = "";
+    element.classList.remove("highlightedel");
+  });
+
+  setTimeout(() => {
+    const lanthanoideElements = document.querySelectorAll(".lanthanoide");
+    const actinoideElements = document.querySelectorAll(".actinoide");
+
     actinoideElements.forEach((element) => {
       element.style.boxShadow =
         "inset 0 0 8px 1px rgb(117, 190, 233), 0 0 5px 1px rgb(117, 190, 233)";
@@ -236,43 +224,5 @@ function changeAlleColorOff() {
         "inset 0 0 8px 1px rgb(0, 99, 156), 0 0 5px 1px rgb(0, 99, 156)";
       element.classList.add("highlightedel");
     });
-  }
-}
- */
-
-//Alle Btn
-
-function changeAlleColorOff() {
-  const lanthanoideElements = document.querySelectorAll(".lanthanoide");
-  const actinoideElements = document.querySelectorAll(".actinoide");
-
-  if (lanthanoideActive || actinoideActive) {
-    lanthanoideElements.forEach((element) => {
-      if (lanthanoideActive) {
-        element.style.boxShadow = "";
-        element.classList.remove("highlightedel");
-      }
-    });
-    actinoideElements.forEach((element) => {
-      if (actinoideActive) {
-        element.style.boxShadow = "";
-        element.classList.remove("highlightedel");
-      }
-    });
-    lanthanoideActive = false;
-    actinoideActive = false;
-  } else {
-    actinoideElements.forEach((element) => {
-      element.style.boxShadow =
-        "inset 0 0 8px 1px rgb(117, 190, 233), 0 0 5px 1px rgb(117, 190, 233)";
-      element.classList.add("highlightedel");
-    });
-    lanthanoideElements.forEach((element) => {
-      element.style.boxShadow =
-        "inset 0 0 8px 1px rgb(0, 99, 156), 0 0 5px 1px rgb(0, 99, 156)";
-      element.classList.add("highlightedel");
-    });
-    lanthanoideActive = !lanthanoideActive;
-    actinoideActive = !actinoideActive;
-  }
+  }, 300);
 }
