@@ -44,3 +44,10 @@ table:hover {
 .Abstand {
   margin-top: 0.4vh;
 }
+.pic1 {
+  margin: 0.6vh 0 0 3vh;
+  height: 15vh;
+  width: 25vh;
+  border: 0.4vh solid black;
+  border-radius: 0.3vh;
+}

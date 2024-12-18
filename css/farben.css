@@ -9,58 +9,21 @@ button {
   border-radius: 2px;
 }
 
-/*EdelgaseBtn */
-
-#edelgaseBtn {
-  border: 0.3vh solid rgb(247, 144, 187);
-  box-shadow: inset 0 0 0 0 rgb(247, 144, 187), 0 0 0 0 rgb(247, 144, 187);
-}
-
-#edelgaseBtn:hover {
-  cursor: pointer;
-  box-shadow: inset 0 0 6px 1px rgb(247, 144, 187),
-    0 0 3px 1px rgb(247, 144, 187);
-}
-/* Edelgase */
-
-td.element.edelgase {
-  transition: box-shadow 0.3s ease-in-out;
-  box-shadow: inset 0 0 0 0 rgb(247, 144, 187), 0 0 0 0 rgb(247, 144, 187);
-}
-
-td.element.edelgase:hover {
-  position: absolute;
-  box-shadow: inset 0 0 10px 1px rgb(247, 144, 187),
-    0 0 15px 1px rgb(247, 144, 187);
-}
-td.element.edelgase.highlightedel:hover {
+td.element.highlight:hover {
   transition: transform 0.3s ease-in-out;
 }
 
-/*HalogeneBtn */
+/*AlleBtn */
 
-#halogeneBtn {
-  border: 0.3vh solid rgb(253, 76, 106);
-  box-shadow: inset 0 0 0 0 rgb(253, 76, 106), 0 0 0 0 rgb(253, 76, 106);
+#alleBtn {
+  border: 0.3vh solid rgb(141, 141, 141);
+  box-shadow: inset 0 0 0 0 rgb(141, 141, 141);
+  margin-top: 3.5vh;
 }
 
-#halogeneBtn:hover {
+#alleBtn:hover {
   cursor: pointer;
-  box-shadow: inset 0 0 6px 1px rgb(253, 76, 106), 0 0 3px 1px rgb(253, 76, 106);
-}
-
-td.element.halogene {
-  transition: box-shadow 0.3s ease-in-out;
-  box-shadow: inset 0 0 0 0 rgb(253, 76, 106), 0 0 0 0 rgb(253, 76, 106);
-}
-
-td.element.halogene:hover {
-  position: absolute;
-  box-shadow: inset 0 0 10px 1px rgb(253, 76, 106),
-    0 0 15px 1px rgb(253, 76, 106);
-}
-td.element.halogene.highlighthalo:hover {
-  transition: transform 0.13s ease-in-out;
+  box-shadow: inset 0 0 6px 1px rgb(141, 141, 141);
 }
 
 /*alkalimetalleBtn */
@@ -84,9 +47,6 @@ td.element.alkalimetalle:hover {
   position: absolute;
   box-shadow: inset 0 0 10px 1px rgb(42, 233, 99), 0 0 15px 1px rgb(42, 233, 99);
 }
-td.element.alkalimetalle.highlightedel:hover {
-  transition: transform 0.3s ease-in-out;
-}
 
 /*erdalkalimetalleBtn */
 
@@ -108,9 +68,6 @@ td.element.erdalkalimetalle {
 td.element.erdalkalimetalle:hover {
   position: absolute;
   box-shadow: inset 0 0 10px 1px rgb(10, 172, 24), 0 0 15px 1px rgb(10, 172, 24);
-}
-td.element.erdalkalimetalle.highlightedel:hover {
-  transition: transform 0.3s ease-in-out;
 }
 
 /*übergangsmetalleBtn */
@@ -134,9 +91,6 @@ td.element.übergangsmetalle:hover {
   position: absolute;
   box-shadow: inset 0 0 10px 1px rgb(0, 50, 187), 0 0 15px 1px rgb(0, 50, 187);
 }
-td.element.übergangsmetalle.highlightedel:hover {
-  transition: transform 0.3s ease-in-out;
-}
 
 /*metalleBtn */
 
@@ -158,9 +112,6 @@ td.element.metalle {
 td.element.metalle:hover {
   position: absolute;
   box-shadow: inset 0 0 10px 1px rgb(95, 0, 95), 0 0 15px 1px rgb(95, 0, 95);
-}
-td.element.metalle.highlightedel:hover {
-  transition: transform 0.3s ease-in-out;
 }
 
 /*halbmetalleBtn */
@@ -185,9 +136,6 @@ td.element.halbmetalle:hover {
   box-shadow: inset 0 0 10px 1px rgb(168, 11, 182),
     0 0 15px 1px rgb(168, 11, 182);
 }
-td.element.halbmetalle.highlightedel:hover {
-  transition: transform 0.3s ease-in-out;
-}
 
 /*nichtmetalleBtn */
 
@@ -210,8 +158,52 @@ td.element.nichtmetalle:hover {
   position: absolute;
   box-shadow: inset 0 0 10px 1px rgb(207, 15, 15), 0 0 15px 1px rgb(207, 15, 15);
 }
-td.element.nichtmetalle.highlightedel:hover {
-  transition: transform 0.3s ease-in-out;
+
+/*HalogeneBtn */
+
+#halogeneBtn {
+  border: 0.3vh solid rgb(253, 76, 106);
+  box-shadow: inset 0 0 0 0 rgb(253, 76, 106), 0 0 0 0 rgb(253, 76, 106);
+}
+
+#halogeneBtn:hover {
+  cursor: pointer;
+  box-shadow: inset 0 0 6px 1px rgb(253, 76, 106), 0 0 3px 1px rgb(253, 76, 106);
+}
+
+td.element.halogene {
+  transition: box-shadow 0.3s ease-in-out;
+  box-shadow: inset 0 0 0 0 rgb(253, 76, 106), 0 0 0 0 rgb(253, 76, 106);
+}
+
+td.element.halogene:hover {
+  position: absolute;
+  box-shadow: inset 0 0 10px 1px rgb(253, 76, 106),
+    0 0 15px 1px rgb(253, 76, 106);
+}
+
+/*EdelgaseBtn */
+
+#edelgaseBtn {
+  border: 0.3vh solid rgb(247, 144, 187);
+  box-shadow: inset 0 0 0 0 rgb(247, 144, 187), 0 0 0 0 rgb(247, 144, 187);
+}
+
+#edelgaseBtn:hover {
+  cursor: pointer;
+  box-shadow: inset 0 0 6px 1px rgb(247, 144, 187),
+    0 0 3px 1px rgb(247, 144, 187);
+}
+
+td.element.edelgase {
+  transition: box-shadow 0.3s ease-in-out;
+  box-shadow: inset 0 0 0 0 rgb(247, 144, 187), 0 0 0 0 rgb(247, 144, 187);
+}
+
+td.element.edelgase:hover {
+  position: absolute;
+  box-shadow: inset 0 0 10px 1px rgb(247, 144, 187),
+    0 0 15px 1px rgb(247, 144, 187);
 }
 
 /*lanthanoideBtn */
@@ -234,9 +226,6 @@ td.element.lanthanoide {
 td.element.lanthanoide:hover {
   position: absolute;
   box-shadow: inset 0 0 10px 1px rgb(0, 99, 156), 0 0 15px 1px rgb(0, 99, 156);
-}
-td.element.lanthanoide.highlightedel:hover {
-  transition: transform 0.3s ease-in-out;
 }
 
 /*actinoideBtn */
@@ -261,22 +250,6 @@ td.element.actinoide:hover {
   position: absolute;
   box-shadow: inset 0 0 10px 1px rgb(117, 190, 233),
     0 0 15px 1px rgb(117, 190, 233);
-}
-td.element.actinoide.highlightedel:hover {
-  transition: transform 0.3s ease-in-out;
-}
-
-/*AlleBtn */
-
-#alleBtn {
-  border: 0.3vh solid rgb(141, 141, 141);
-  box-shadow: inset 0 0 0 0 rgb(141, 141, 141);
-  margin-top: 3.5vh;
-}
-
-#alleBtn:hover {
-  cursor: pointer;
-  box-shadow: inset 0 0 6px 1px rgb(141, 141, 141);
 }
 
 /*resetBtn */

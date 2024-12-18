@@ -11,10 +11,10 @@ function changeEdelgaseColor() {
     if (edelgaseActive) {
       element.style.boxShadow =
         "inset 0 0 8px 1px rgb(247, 144, 187), 0 0 5px 1px rgb(247, 144, 187)";
-      element.classList.add("highlightedel");
+      element.classList.add("highlight");
     } else {
       element.style.boxShadow = "";
-      element.classList.remove("highlightedel");
+      element.classList.remove("highlight");
     }
   });
 }
@@ -32,10 +32,10 @@ function changeHalogeneColor() {
     if (halogeneActive) {
       element.style.boxShadow =
         "inset 0 0 8px 1px rgb(253, 76, 106), 0 0 5px 1px rgb(253, 76, 106)";
-      element.classList.add("highlighthalo");
+      element.classList.add("highlight");
     } else {
       element.style.boxShadow = "";
-      element.classList.remove("highlighthalo");
+      element.classList.remove("highlight");
     }
   });
 }
@@ -52,10 +52,10 @@ function changeAlkalimetalleColor() {
     if (alkalimetalleActive) {
       element.style.boxShadow =
         "inset 0 0 8px 1px rgb(42, 233, 99), 0 0 5px 1px rgb(42, 233, 99)";
-      element.classList.add("highlightedel");
+      element.classList.add("highlight");
     } else {
       element.style.boxShadow = "";
-      element.classList.remove("highlightedel");
+      element.classList.remove("highlight");
     }
   });
 }
@@ -73,10 +73,10 @@ function changeErdalkalimetalleColor() {
     if (erdalkalimetalleActive) {
       element.style.boxShadow =
         "inset 0 0 8px 1px rgb(10, 172, 24), 0 0 5px 1px rgb(10, 172, 24)";
-      element.classList.add("highlightedel");
+      element.classList.add("highlight");
     } else {
       element.style.boxShadow = "";
-      element.classList.remove("highlightedel");
+      element.classList.remove("highlight");
     }
   });
 }
@@ -94,10 +94,10 @@ function changeÜbergangsmetalleColor() {
     if (übergangsmetalleActive) {
       element.style.boxShadow =
         "inset 0 0 8px 1px rgb(0, 50, 187), 0 0 5px 1px rgb(0, 50, 187)";
-      element.classList.add("highlightedel");
+      element.classList.add("highlight");
     } else {
       element.style.boxShadow = "";
-      element.classList.remove("highlightedel");
+      element.classList.remove("highlight");
     }
   });
 }
@@ -114,10 +114,10 @@ function changeMetalleColor() {
     if (metalleActive) {
       element.style.boxShadow =
         "inset 0 0 8px 3px rgb(95, 0, 95), 0 0 5px 1px rgb(95, 0, 95)";
-      element.classList.add("highlightedel");
+      element.classList.add("highlight");
     } else {
       element.style.boxShadow = "";
-      element.classList.remove("highlightedel");
+      element.classList.remove("highlight");
     }
   });
 }
@@ -134,10 +134,10 @@ function changeHalbmetalleColor() {
     if (halbmetalleActive) {
       element.style.boxShadow =
         "inset 0 0 8px 1px rgb(168, 11, 182), 0 0 5px 1px rgb(168, 11, 182)";
-      element.classList.add("highlightedel");
+      element.classList.add("highlight");
     } else {
       element.style.boxShadow = "";
-      element.classList.remove("highlightedel");
+      element.classList.remove("highlight");
     }
   });
 }
@@ -154,10 +154,10 @@ function changeNichtmetalleColor() {
     if (nichtmetalleActive) {
       element.style.boxShadow =
         "inset 0 0 8px 1px rgb(207, 15, 15), 0 0 5px 1px rgb(207, 15, 15)";
-      element.classList.add("highlightedel");
+      element.classList.add("highlight");
     } else {
       element.style.boxShadow = "";
-      element.classList.remove("highlightedel");
+      element.classList.remove("highlight");
     }
   });
 }
@@ -174,10 +174,10 @@ function changeLanthanoideColor() {
     if (lanthanoideActive) {
       element.style.boxShadow =
         "inset 0 0 8px 1px rgb(0, 99, 156), 0 0 5px 1px rgb(0, 99, 156)";
-      element.classList.add("highlightedel");
+      element.classList.add("highlight");
     } else {
       element.style.boxShadow = "";
-      element.classList.remove("highlightedel");
+      element.classList.remove("highlight");
     }
   });
 }
@@ -194,22 +194,23 @@ function changeActinoideColor() {
     if (actinoideActive) {
       element.style.boxShadow =
         "inset 0 0 8px 1px rgb(117, 190, 233), 0 0 5px 1px rgb(117, 190, 233)";
-      element.classList.add("highlightedel");
+      element.classList.add("highlight");
     } else {
       element.style.boxShadow = "";
-      element.classList.remove("highlightedel");
+      element.classList.remove("highlight");
     }
   });
 }
 
 //AlleBtn
 
+const aktive = ;
 function changeAlleColor() {
   const alleElemente = document.querySelectorAll(".element");
 
   alleElemente.forEach((element) => {
     element.style.boxShadow = "";
-    element.classList.remove("highlightedel");
+    element.classList.remove("highlight");
   });
 
   setTimeout(() => {
@@ -229,54 +230,55 @@ function changeAlleColor() {
     alkalimetalleElements.forEach((element) => {
       element.style.boxShadow =
         "inset 0 0 8px 1px rgb(42, 233, 99), 0 0 5px 1px rgb(42, 233, 99)";
-      element.classList.add("highlightedel");
+      element.classList.add("highlight");
     });
     erdalkalimetalleElements.forEach((element) => {
       element.style.boxShadow =
         "inset 0 0 8px 1px rgb(10, 172, 24), 0 0 5px 1px rgb(10, 172, 24)";
-      element.classList.add("highlightedel");
+      element.classList.add("highlight");
     });
     übergangsmetalleElements.forEach((element) => {
       element.style.boxShadow =
         "inset 0 0 8px 1px rgb(0, 50, 187), 0 0 5px 1px rgb(0, 50, 187)";
-      element.classList.add("highlightedel");
+      element.classList.add("highlight");
     });
     metalleElements.forEach((element) => {
       element.style.boxShadow =
         "inset 0 0 8px 3px rgb(95, 0, 95), 0 0 5px 1px rgb(95, 0, 95)";
-      element.classList.add("highlightedel");
+      element.classList.add("highlight");
     });
     halbmetalleElements.forEach((element) => {
       element.style.boxShadow =
         "inset 0 0 8px 1px rgb(168, 11, 182), 0 0 5px 1px rgb(168, 11, 182)";
-      element.classList.add("highlightedel");
+      element.classList.add("highlight");
     });
     nichtmetalleElements.forEach((element) => {
       element.style.boxShadow =
         "inset 0 0 8px 1px rgb(207, 15, 15), 0 0 5px 1px rgb(207, 15, 15)";
-      element.classList.add("highlightedel");
+      element.classList.add("highlight");
     });
     halogeneElements.forEach((element) => {
       element.style.boxShadow =
         "inset 0 0 8px 1px rgb(247, 144, 187), 0 0 5px 1px rgb(247, 144, 187)";
-      element.classList.add("highlightedel");
+      element.classList.add("highlight");
     });
     edelgaseElements.forEach((element) => {
       element.style.boxShadow =
         "inset 0 0 8px 1px rgb(253, 76, 106), 0 0 5px 1px rgb(253, 76, 106)";
-      element.classList.add("highlightedel");
+      element.classList.add("highlight");
     });
     actinoideElements.forEach((element) => {
       element.style.boxShadow =
         "inset 0 0 8px 1px rgb(117, 190, 233), 0 0 5px 1px rgb(117, 190, 233)";
-      element.classList.add("highlightedel");
+      element.classList.add("highlight");
     });
     lanthanoideElements.forEach((element) => {
       element.style.boxShadow =
         "inset 0 0 8px 1px rgb(0, 99, 156), 0 0 5px 1px rgb(0, 99, 156)";
-      element.classList.add("highlightedel");
+      element.classList.add("highlight");
     });
   }, 300);
+
   if (!alkalimetalleActive) {
     alkalimetalleActive = !alkalimetalleActive;
   }
@@ -307,7 +309,7 @@ function changeAlleColor() {
   if (!actinoideActive) {
     actinoideActive = !actinoideActive;
   }
-}
+};
 
 //offBtn
 
@@ -316,7 +318,7 @@ function reset() {
 
   alleElemente.forEach((element) => {
     element.style.boxShadow = "";
-    element.classList.remove("highlightedel");
+    element.classList.remove("highlight");
   });
   if (alkalimetalleActive) {
     alkalimetalleActive = !alkalimetalleActive;
