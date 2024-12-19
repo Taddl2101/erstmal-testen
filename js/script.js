@@ -23,27 +23,18 @@ const states = [
   "actinoideActive",
 ];
 
-// alle zustände auf false setzen
-
-let edelgaseActive = false;
-let halogeneActive = false;
-let alkalimetalleActive = false;
-let erdalkalimetalleActive = false;
-let übergangsmetalleActive = false;
-let metalleActive = false;
-let halbmetalleActive = false;
-let nichtmetalleActive = false;
-let lanthanoideActive = false;
-let actinoideActive = false;
+states.forEach((state) => {
+  window[state] = false;
+});
 
 // universelle function zum change color
 
-function changeColor(state, elements, boxShadow) {
+function changeColor(state, elements, boxShadowColor) {
   window[state] = !window[state];
 
   elements.forEach((element) => {
     if (window[state]) {
-      element.style.boxShadow = boxShadow;
+      element.style.boxShadow = boxShadowColor;
       element.classList.add("highlight");
     } else {
       element.style.boxShadow = "";
