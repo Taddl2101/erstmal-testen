@@ -1,10 +1,33 @@
+const alleElemente = document.querySelectorAll(".element");
+const alkalimetalleElements = document.querySelectorAll(".alkalimetalle");
+const erdalkalimetalleElements = document.querySelectorAll(".erdalkalimetalle");
+const übergangsmetalleElements = document.querySelectorAll(".übergangsmetalle");
+const metalleElements = document.querySelectorAll(".metalle");
+const halbmetalleElements = document.querySelectorAll(".halbmetalle");
+const nichtmetalleElements = document.querySelectorAll(".nichtmetalle");
+const halogeneElements = document.querySelectorAll(".halogene");
+const edelgaseElements = document.querySelectorAll(".edelgase");
+const lanthanoideElements = document.querySelectorAll(".lanthanoide");
+const actinoideElements = document.querySelectorAll(".actinoide");
+
+const states = [
+  "alkalimetalleActive",
+  "erdalkalimetalleActive",
+  "übergangsmetalleActive",
+  "metalleActive",
+  "halbmetalleActive",
+  "nichtmetalleActive",
+  "halogeneActive",
+  "edelgaseActive",
+  "lanthanoideActive",
+  "actinoideActive",
+];
+
 // EdelgaseBtn
 
 let edelgaseActive = false;
 
-function changeEdelgaseColor() {
-  const edelgaseElements = document.querySelectorAll(".edelgase");
-
+function changeEdelgaseColor() { 
   edelgaseActive = !edelgaseActive;
 
   edelgaseElements.forEach((element) => {
@@ -24,8 +47,6 @@ function changeEdelgaseColor() {
 let halogeneActive = false;
 
 function changeHalogeneColor() {
-  const halogeneElements = document.querySelectorAll(".halogene");
-
   halogeneActive = !halogeneActive;
 
   halogeneElements.forEach((element) => {
@@ -44,8 +65,6 @@ function changeHalogeneColor() {
 let alkalimetalleActive = false;
 
 function changeAlkalimetalleColor() {
-  const alkalimetalleElements = document.querySelectorAll(".alkalimetalle");
-
   alkalimetalleActive = !alkalimetalleActive;
 
   alkalimetalleElements.forEach((element) => {
@@ -64,9 +83,6 @@ function changeAlkalimetalleColor() {
 let erdalkalimetalleActive = false;
 
 function changeErdalkalimetalleColor() {
-  const erdalkalimetalleElements =
-    document.querySelectorAll(".erdalkalimetalle");
-
   erdalkalimetalleActive = !erdalkalimetalleActive;
 
   erdalkalimetalleElements.forEach((element) => {
@@ -85,9 +101,6 @@ function changeErdalkalimetalleColor() {
 let übergangsmetalleActive = false;
 
 function changeÜbergangsmetalleColor() {
-  const übergangsmetalleElements =
-    document.querySelectorAll(".übergangsmetalle");
-
   übergangsmetalleActive = !übergangsmetalleActive;
 
   übergangsmetalleElements.forEach((element) => {
@@ -106,8 +119,6 @@ function changeÜbergangsmetalleColor() {
 let metalleActive = false;
 
 function changeMetalleColor() {
-  const metalleElements = document.querySelectorAll(".metalle");
-
   metalleActive = !metalleActive;
 
   metalleElements.forEach((element) => {
@@ -126,8 +137,6 @@ function changeMetalleColor() {
 let halbmetalleActive = false;
 
 function changeHalbmetalleColor() {
-  const halbmetalleElements = document.querySelectorAll(".halbmetalle");
-
   halbmetalleActive = !halbmetalleActive;
 
   halbmetalleElements.forEach((element) => {
@@ -146,8 +155,6 @@ function changeHalbmetalleColor() {
 let nichtmetalleActive = false;
 
 function changeNichtmetalleColor() {
-  const nichtmetalleElements = document.querySelectorAll(".nichtmetalle");
-
   nichtmetalleActive = !nichtmetalleActive;
 
   nichtmetalleElements.forEach((element) => {
@@ -166,8 +173,6 @@ function changeNichtmetalleColor() {
 let lanthanoideActive = false;
 
 function changeLanthanoideColor() {
-  const lanthanoideElements = document.querySelectorAll(".lanthanoide");
-
   lanthanoideActive = !lanthanoideActive;
 
   lanthanoideElements.forEach((element) => {
@@ -186,8 +191,6 @@ function changeLanthanoideColor() {
 let actinoideActive = false;
 
 function changeActinoideColor() {
-  const actinoideElements = document.querySelectorAll(".actinoide");
-
   actinoideActive = !actinoideActive;
 
   actinoideElements.forEach((element) => {
@@ -204,29 +207,14 @@ function changeActinoideColor() {
 
 //AlleBtn
 
-const aktive = ;
+// const aktive = ; const muss einem festen wert zugewiesen werden => deswegen ging gestern der code nicht 
 function changeAlleColor() {
-  const alleElemente = document.querySelectorAll(".element");
-
   alleElemente.forEach((element) => {
     element.style.boxShadow = "";
     element.classList.remove("highlight");
   });
 
   setTimeout(() => {
-    const alkalimetalleElements = document.querySelectorAll(".alkalimetalle");
-    const erdalkalimetalleElements =
-      document.querySelectorAll(".erdalkalimetalle");
-    const übergangsmetalleElements =
-      document.querySelectorAll(".übergangsmetalle");
-    const metalleElements = document.querySelectorAll(".metalle");
-    const halbmetalleElements = document.querySelectorAll(".halbmetalle");
-    const nichtmetalleElements = document.querySelectorAll(".nichtmetalle");
-    const halogeneElements = document.querySelectorAll(".halogene");
-    const edelgaseElements = document.querySelectorAll(".edelgase");
-    const lanthanoideElements = document.querySelectorAll(".lanthanoide");
-    const actinoideElements = document.querySelectorAll(".actinoide");
-
     alkalimetalleElements.forEach((element) => {
       element.style.boxShadow =
         "inset 0 0 8px 1px rgb(42, 233, 99), 0 0 5px 1px rgb(42, 233, 99)";
@@ -279,75 +267,28 @@ function changeAlleColor() {
     });
   }, 300);
 
-  if (!alkalimetalleActive) {
-    alkalimetalleActive = !alkalimetalleActive;
-  }
-  if (!erdalkalimetalleActive) {
-    erdalkalimetalleActive = !erdalkalimetalleActive;
-  }
-  if (!übergangsmetalleActive) {
-    übergangsmetalleActive = !übergangsmetalleActive;
-  }
-  if (!metalleActive) {
-    metalleActive = !metalleActive;
-  }
-  if (!halbmetalleActive) {
-    halbmetalleActive = !halbmetalleActive;
-  }
-  if (!nichtmetalleActive) {
-    nichtmetalleActive = !nichtmetalleActive;
-  }
-  if (!halogeneActive) {
-    halogeneActive = !halogeneActive;
-  }
-  if (!edelgaseActive) {
-    edelgaseActive = !edelgaseActive;
-  }
-  if (!lanthanoideActive) {
-    lanthanoideActive = !lanthanoideActive;
-  }
-  if (!actinoideActive) {
-    actinoideActive = !actinoideActive;
-  }
-};
+  // aus array auf jeden einzeln zustände zugreifen
+
+  states.forEach((state) => {
+    if (window[state]) {
+      window[state] = !window[state];
+    }
+  });
+}
 
 //offBtn
 
 function reset() {
-  const alleElemente = document.querySelectorAll(".element");
-
   alleElemente.forEach((element) => {
     element.style.boxShadow = "";
     element.classList.remove("highlight");
   });
-  if (alkalimetalleActive) {
-    alkalimetalleActive = !alkalimetalleActive;
-  }
-  if (erdalkalimetalleActive) {
-    erdalkalimetalleActive = !erdalkalimetalleActive;
-  }
-  if (übergangsmetalleActive) {
-    übergangsmetalleActive = !übergangsmetalleActive;
-  }
-  if (metalleActive) {
-    metalleActive = !metalleActive;
-  }
-  if (halbmetalleActive) {
-    halbmetalleActive = !halbmetalleActive;
-  }
-  if (nichtmetalleActive) {
-    nichtmetalleActive = !nichtmetalleActive;
-  }
-  if (halogeneActive) {
-    halogeneActive = !halogeneActive;
-  }
-  if (edelgaseActive) {
-    edelgaseActive = !edelgaseActive;
-  }
-  if (lanthanoideActive) {
-    lanthanoideActive = !lanthanoideActive;
-  }
-  if (actinoideActive) {
-    actinoideActive = !actinoideActive;
-  }
+
+  // aus array auf jeden einzeln zustände zugreifen
+
+  states.forEach((state) => {
+    if (window[state]) {
+      window[state] = !window[state];
+    }
+  });
 }

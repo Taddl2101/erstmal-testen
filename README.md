@@ -9,6 +9,7 @@ gutes pse Bild
 
 # To-do
 
+- hol dir mal error lens extension
 - hell dunkel modus (js)
 - Formales: schriftarten, Farben, indexdatei
 - farbanpassung lila
