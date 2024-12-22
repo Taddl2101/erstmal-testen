@@ -43,24 +43,10 @@ function changeColor(state, elements, boxShadowColor) {
   });
 }
 
-function changeActinoideColor() {
-  actinoideActive = !actinoideActive;
 
-  actinoideElements.forEach((element) => {
-    if (actinoideActive) {
-      element.style.boxShadow =
-        "inset 0 0 8px 1px rgb(117, 190, 233), 0 0 5px 1px rgb(117, 190, 233)";
-      element.classList.add("highlight");
-    } else {
-      element.style.boxShadow = "";
-      element.classList.remove("highlight");
-    }
-  });
-}
 
 //AlleBtn
 
-// const aktive = ; const muss einem festen wert zugewiesen werden => deswegen ging gestern der code nicht
 
 function changeAlleColor() {
   alleElemente.forEach((element) => {

@@ -7,6 +7,7 @@ button {
   margin: 1vh 0 0 4vh;
   transition: box-shadow 0.3s ease-in-out;
   border-radius: 2px;
+  overflow: hidden;
 }
 
 td.element.highlight:hover {
