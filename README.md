@@ -14,6 +14,7 @@ gutes pse Bild
 - Formales: schriftarten, Farben, indexdatei
 - farbanpassung lila
 - alle button finishen
+- pfeile ac u la
 
 # Diskussion
 
@@ -21,13 +22,9 @@ alles zu vh gemacht -> trotzdem Kacke
 --> % nutzen !!!
 Impressum ++ (js)
 
-mayby eine variable für alle xActive machewn --> weniger code
-
 # Samstag
 
 html seiten discussion
 schriftarten
-js verlinkung
-alle button js
 
 # zwischenspeicher

@@ -43,10 +43,7 @@ function changeColor(state, elements, boxShadowColor) {
   });
 }
 
-
-
 //AlleBtn
-
 
 function changeAlleColor() {
   alleElemente.forEach((element) => {
@@ -107,8 +104,6 @@ function changeAlleColor() {
     );
   }, 300);
 
-  // aus array auf jeden einzeln zustände zugreifen
-
   states.forEach((state) => {
     if (window[state]) {
       window[state] = !window[state];
@@ -123,8 +118,6 @@ function reset() {
     element.style.boxShadow = "";
     element.classList.remove("highlight");
   });
-
-  // aus array auf jeden einzeln zustände zugreifen
 
   states.forEach((state) => {
     if (window[state]) {
