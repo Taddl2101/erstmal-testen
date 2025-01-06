@@ -51,3 +51,13 @@ table:hover {
   border: 0.4vh solid black;
   border-radius: 0.3vh;
 }
+.dreieck {
+  display: inline-block;
+  width: 0vh;
+  height: 0vh;
+  
+  border-top: 1vh solid transparent;
+  border-right: 0vh solid transparent;
+  border-bottom: 1vh solid transparent;
+  border-left: 1vh solid rgb(248, 248, 248);
+}
