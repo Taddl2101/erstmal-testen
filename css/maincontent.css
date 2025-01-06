@@ -31,7 +31,11 @@ table:hover {
   transition: transform 0.13s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-.non-element {
+.element span {
+  display: none;
+}
+
+.element:hover .non-element {
   position: relative;
   width: 7.3vh;
   height: 7.3vh;
@@ -68,10 +72,6 @@ table:hover {
   border-left: 1vh solid rgb(248, 248, 248);
 }
 
-.Ordnungszahl {
-  display: none;
-}
-
 .element:hover .Ordnungszahl {
   display: block;
   position: absolute;
@@ -81,15 +81,13 @@ table:hover {
   color: white;
 }
 
-.Fullname {
-  display: none;
-}
-
 .element:hover .Fullname {
   display: block;
+  visibility: visible;
+  opacity: 1;
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 25%;
+  left: 25%;
   font-size: 0.6em;
   color: white;
 }
