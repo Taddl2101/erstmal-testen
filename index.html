@@ -11,8 +11,8 @@
   <body>
     <div class="banner">
       <h1>Das Periodensystem der Elemente</h1>
+      <a href="html/WasIstDasPSE.html">Was Ist das PSE?</a>
     </div>
-    <!--Platz for Unterseiten-->
     <div class="menue">
       <button id="alleBtn" onclick="changeAlleColor()">Alle</button>
 
@@ -88,10 +88,10 @@
 
       <button id="resetBtn" onclick="reset()">Reset</button>
     </div>
-    
 
     <div class="rahmen">
-      <!--Table for PSE-->
+      <span><img src="Bilder/chemie-hintergrund.jpg" class="pic1" /></span>
+      <!--Table für PSE-->
       <div class="table">
         <table>
           <tr>
@@ -114,9 +114,10 @@
             <th class="tr">7.Hg</th>
             <th class="tr">8.Hg</th>
           </tr>
-          <!--Elements-->
           <tr>
-            <td class="element nichtmetalle">H</td>
+            <td class="element nichtmetalle">
+              H<span class="Ordnungszahl">1</span>
+            </td>
             <td class="non-element"></td>
             <td class="non-element"></td>
             <td class="non-element"></td>
@@ -133,11 +134,11 @@
             <td class="non-element"></td>
             <td class="non-element"></td>
             <td class="non-element"></td>
-            <td class="element edelgase">He</td>
+            <td class="element edelgase">He<span class="Ordnungszahl">1</span><span class="Fullname">Helium</span></td>
           </tr>
           <tr>
-            <td class="element alkalimetalle">Li</td>
-            <td class="element erdalkalimetalle">Be</td>
+            <td class="element alkalimetalle">Li<span class="Ordnungszahl">1</span></td>
+            <td class="element erdalkalimetalle">Be<span class="Ordnungszahl">1</span></td>
             <td class="non-element"></td>
             <td class="non-element"></td>
             <td class="non-element"></td>
@@ -148,16 +149,16 @@
             <td class="non-element"></td>
             <td class="non-element"></td>
             <td class="non-element"></td>
-            <td class="element halbmetalle">B</td>
-            <td class="element nichtmetalle">C</td>
-            <td class="element nichtmetalle">N</td>
-            <td class="element nichtmetalle">O</td>
-            <td class="element halogene">F</td>
-            <td class="element edelgase">Ne</td>
+            <td class="element halbmetalle">B<span class="Ordnungszahl">1</span></td>
+            <td class="element nichtmetalle">C<span class="Ordnungszahl">1</span></td>
+            <td class="element nichtmetalle">N<span class="Ordnungszahl">1</span></td>
+            <td class="element nichtmetalle">O<span class="Ordnungszahl">1</span></td>
+            <td class="element halogene">F<span class="Ordnungszahl">1</span></td>
+            <td class="element edelgase">Ne<span class="Ordnungszahl">1</span></td>
           </tr>
           <tr>
-            <td class="element alkalimetalle">Na</td>
-            <td class="element erdalkalimetalle">Mg</td>
+            <td class="element alkalimetalle">Na<span class="Ordnungszahl">1</span></td>
+            <td class="element erdalkalimetalle">Mg<span class="Ordnungszahl">1</span></td>
             <td class="non-element"><b>1.Ng</b></td>
             <td class="non-element"><b>2.Ng</b></td>
             <td class="non-element"><b>3.Ng</b></td>
@@ -168,130 +169,134 @@
             <td class="non-element"><b>8.Ng</b></td>
             <td class="non-element"><b>9.Ng</b></td>
             <td class="non-element"><b>10.Ng</b></td>
-            <td class="element metalle">Al</td>
-            <td class="element halbmetalle">Si</td>
-            <td class="element nichtmetalle">P</td>
-            <td class="element nichtmetalle">S</td>
-            <td class="element halogene">Cl</td>
-            <td class="element edelgase">Ar</td>
+            <td class="element metalle">Al<span class="Ordnungszahl">1</span></td>
+            <td class="element halbmetalle">Si<span class="Ordnungszahl">1</span></td>
+            <td class="element nichtmetalle">P<span class="Ordnungszahl">1</span></td>
+            <td class="element nichtmetalle">S<span class="Ordnungszahl">1</span></td>
+            <td class="element halogene">Cl<span class="Ordnungszahl">1</span></td>
+            <td class="element edelgase">Ar<span class="Ordnungszahl">1</span></td>
           </tr>
           <tr>
-            <td class="element alkalimetalle">K</td>
-            <td class="element erdalkalimetalle">Ca</td>
-            <td class="element übergangsmetalle">Sc</td>
-            <td class="element übergangsmetalle">Ti</td>
-            <td class="element übergangsmetalle">V</td>
-            <td class="element übergangsmetalle">Cr</td>
-            <td class="element übergangsmetalle">Mn</td>
-            <td class="element übergangsmetalle">Fe</td>
-            <td class="element übergangsmetalle">Co</td>
-            <td class="element übergangsmetalle">Ni</td>
-            <td class="element übergangsmetalle">Cu</td>
-            <td class="element übergangsmetalle">Zn</td>
-            <td class="element metalle">Ga</td>
-            <td class="element halbmetalle">Ge</td>
-            <td class="element halbmetalle">As</td>
-            <td class="element nichtmetalle">Se</td>
-            <td class="element halogene">Br</td>
-            <td class="element edelgase">Kr</td>
+            <td class="element alkalimetalle">K<span class="Ordnungszahl">1</span></td>
+            <td class="element erdalkalimetalle">Ca<span class="Ordnungszahl">1</span></td>
+            <td class="element übergangsmetalle">Sc<span class="Ordnungszahl">1</span></td>
+            <td class="element übergangsmetalle">Ti<span class="Ordnungszahl">1</span></td>
+            <td class="element übergangsmetalle">V<span class="Ordnungszahl">1</span></td>
+            <td class="element übergangsmetalle">Cr<span class="Ordnungszahl">1</span></td>
+            <td class="element übergangsmetalle">Mn<span class="Ordnungszahl">1</span></td>
+            <td class="element übergangsmetalle">Fe<span class="Ordnungszahl">1</span></td>
+            <td class="element übergangsmetalle">Co<span class="Ordnungszahl">1</span></td>
+            <td class="element übergangsmetalle">Ni<span class="Ordnungszahl">1</span></td>
+            <td class="element übergangsmetalle">Cu<span class="Ordnungszahl">1</span></td>
+            <td class="element übergangsmetalle">Zn<span class="Ordnungszahl">1</span></td>
+            <td class="element metalle">Ga<span class="Ordnungszahl">1</span></td>
+            <td class="element halbmetalle">Ge<span class="Ordnungszahl">1</td>
+            <td class="element halbmetalle">As<span class="Ordnungszahl">1</td>
+            <td class="element nichtmetalle">Se<span class="Ordnungszahl">1</td>
+            <td class="element halogene">Br<span class="Ordnungszahl">1</td>
+            <td class="element edelgase">Kr<span class="Ordnungszahl">1</td>
           </tr>
           <tr>
-            <td class="element alkalimetalle">Rb</td>
-            <td class="element erdalkalimetalle">Sr</td>
-            <td class="element übergangsmetalle">Y</td>
-            <td class="element übergangsmetalle">Zr</td>
-            <td class="element übergangsmetalle">Nb</td>
-            <td class="element übergangsmetalle">Mo</td>
-            <td class="element übergangsmetalle">Tc</td>
-            <td class="element übergangsmetalle">Ru</td>
-            <td class="element übergangsmetalle">Rh</td>
-            <td class="element übergangsmetalle">Pd</td>
-            <td class="element übergangsmetalle">Ag</td>
-            <td class="element übergangsmetalle">Cd</td>
-            <td class="element metalle">In</td>
-            <td class="element metalle">Sn</td>
-            <td class="element halbmetalle">Sb</td>
-            <td class="element halbmetalle">Te</td>
-            <td class="element halogene">I</td>
-            <td class="element edelgase">Xe</td>
+            <td class="element alkalimetalle">Rb<span class="Ordnungszahl">1</span></td>
+            <td class="element erdalkalimetalle">Sr<span class="Ordnungszahl">1</span></td>
+            <td class="element übergangsmetalle">Y<span class="Ordnungszahl">1</span></td>
+            <td class="element übergangsmetalle">Zr<span class="Ordnungszahl">1</span></td>
+            <td class="element übergangsmetalle">Nb<span class="Ordnungszahl">1</span></td>
+            <td class="element übergangsmetalle">Mo<span class="Ordnungszahl">1</span></td>
+            <td class="element übergangsmetalle">Tc<span class="Ordnungszahl">1</span></td>
+            <td class="element übergangsmetalle">Ru<span class="Ordnungszahl">1</span></td>
+            <td class="element übergangsmetalle">Rh<span class="Ordnungszahl">1</span></td>
+            <td class="element übergangsmetalle">Pd<span class="Ordnungszahl">1</span></td>
+            <td class="element übergangsmetalle">Ag<span class="Ordnungszahl">1</span></td>
+            <td class="element übergangsmetalle">Cd<span class="Ordnungszahl">1</span></td>
+            <td class="element metalle">In<span class="Ordnungszahl">1</span></td>
+            <td class="element metalle">Sn<span class="Ordnungszahl">1</span></td>
+            <td class="element halbmetalle">Sb<span class="Ordnungszahl">1</span></td>
+            <td class="element halbmetalle">Te<span class="Ordnungszahl">1</span></td>
+            <td class="element halogene">I<span class="Ordnungszahl">1</span></td>
+            <td class="element edelgase">Xe<span class="Ordnungszahl">1</span></td>
           </tr>
           <tr>
-            <td class="element alkalimetalle">Cs</td>
-            <td class="element erdalkalimetalle">B</td>
-            <td class="element lanthanoide">La <span class="dreieck"></span></td> 
-            <td class="element übergangsmetalle">Hf</td>
-            <td class="element übergangsmetalle">Ta</td>
-            <td class="element übergangsmetalle">W</td>
-            <td class="element übergangsmetalle">Re</td>
-            <td class="element übergangsmetalle">Os</td>
-            <td class="element übergangsmetalle">Ir</td>
-            <td class="element übergangsmetalle">Pt</td>
-            <td class="element übergangsmetalle">Au</td>
-            <td class="element übergangsmetalle">Hg</td>
-            <td class="element metalle">Ti</td>
-            <td class="element metalle">Pb</td>
-            <td class="element metalle">Bi</td>
-            <td class="element halbmetalle">Po</td>
-            <td class="element halogene">At</td>
-            <td class="element edelgase">Rn</td>
+            <td class="element alkalimetalle">Cs<span class="Ordnungszahl">1</span></td>
+            <td class="element erdalkalimetalle">B<span class="Ordnungszahl">1</span></td>
+            <td class="element lanthanoide">
+              La <span class="dreieck"></span><span class="Ordnungszahl">1</span>
+            </td>
+            <td class="element übergangsmetalle">Hf<span class="Ordnungszahl">1</span></td>
+            <td class="element übergangsmetalle">Ta<span class="Ordnungszahl">1</span></td>
+            <td class="element übergangsmetalle">W<span class="Ordnungszahl">1</span></td>
+            <td class="element übergangsmetalle">Re<span class="Ordnungszahl">1</span></td>
+            <td class="element übergangsmetalle">Os<span class="Ordnungszahl">1</span></td>
+            <td class="element übergangsmetalle">Ir<span class="Ordnungszahl">1</span></td>
+            <td class="element übergangsmetalle">Pt<span class="Ordnungszahl">1</span></td>
+            <td class="element übergangsmetalle">Au<span class="Ordnungszahl">1</span></td>
+            <td class="element übergangsmetalle">Hg<span class="Ordnungszahl">1</span></td>
+            <td class="element metalle">Ti<span class="Ordnungszahl">1</span></td>
+            <td class="element metalle">Pb<span class="Ordnungszahl">1</span></td>
+            <td class="element metalle">Bi<span class="Ordnungszahl">1</span></td>
+            <td class="element halbmetalle">Po<span class="Ordnungszahl">1</span></td>
+            <td class="element halogene">At<span class="Ordnungszahl">1</span></td>
+            <td class="element edelgase">Rn<span class="Ordnungszahl">1</span></td>
           </tr>
           <tr>
-            <td class="element alkalimetalle">Fr</td>
-            <td class="element erdalkalimetalle">Ra</td>
-            <td class="element actinoide">Ac <span class="dreieck"></span></td>
-            <td class="element übergangsmetalle">Rf</td>
-            <td class="element übergangsmetalle">Db</td>
-            <td class="element übergangsmetalle">Sg</td>
-            <td class="element übergangsmetalle">Bh</td>
-            <td class="element übergangsmetalle">Hs</td>
-            <td class="element übergangsmetalle">Mt</td>
-            <td class="element übergangsmetalle">Ds</td>
-            <td class="element übergangsmetalle">Rg</td>
-            <td class="element übergangsmetalle">Cn</td>
-            <td class="element nix">Nh</td>
-            <td class="element nix">Fl</td>
-            <td class="element nix">Mc</td>
-            <td class="element nix">Lv</td>
-            <td class="element nix">Ts</td>
-            <td class="element nix">Og</td>
+            <td class="element alkalimetalle">Fr<span class="Ordnungszahl">1</span></td>
+            <td class="element erdalkalimetalle">Ra<span class="Ordnungszahl">1</span></td>
+            <td class="element actinoide">Ac <span class="dreieck"></span><span class="Ordnungszahl">1</span></td>
+            <td class="element übergangsmetalle">Rf<span class="Ordnungszahl">1</span></td>
+            <td class="element übergangsmetalle">Db<span class="Ordnungszahl">1</span></td>
+            <td class="element übergangsmetalle">Sg<span class="Ordnungszahl">1</span></td>
+            <td class="element übergangsmetalle">Bh<span class="Ordnungszahl">1</span></td>
+            <td class="element übergangsmetalle">Hs<span class="Ordnungszahl">1</span></td>
+            <td class="element übergangsmetalle">Mt<span class="Ordnungszahl">1</span></td>
+            <td class="element übergangsmetalle">Ds<span class="Ordnungszahl">1</span></td>
+            <td class="element übergangsmetalle">Rg<span class="Ordnungszahl">1</span></td>
+            <td class="element übergangsmetalle">Cn<span class="Ordnungszahl">1</span></td>
+            <td class="element nix">Nh<span class="Ordnungszahl">1</span></td>
+            <td class="element nix">Fl<span class="Ordnungszahl">1</span></td>
+            <td class="element nix">Mc<span class="Ordnungszahl">1</span></td>
+            <td class="element nix">Lv<span class="Ordnungszahl">1</span></td>
+            <td class="element nix">Ts<span class="Ordnungszahl">1</span></td>
+            <td class="element nix">Og<span class="Ordnungszahl">1</span></td>
           </tr>
         </table>
         <table class="Abstand">
           <tr>
-            <td class="element lanthanoide"><span class="dreieck"></span> Ce</td>
-            <td class="element lanthanoide">Pr</td>
-            <td class="element lanthanoide">Ne</td>
-            <td class="element lanthanoide">Pm</td>
-            <td class="element lanthanoide">Sm</td>
-            <td class="element lanthanoide">Eu</td>
-            <td class="element lanthanoide">Gd</td>
-            <td class="element lanthanoide">Tb</td>
-            <td class="element lanthanoide">Dy</td>
-            <td class="element lanthanoide">Ho</td>
-            <td class="element lanthanoide">Er</td>
-            <td class="element lanthanoide">Tm</td>
-            <td class="element lanthanoide">Yb</td>
-            <td class="element lanthanoide">Lu</td>
+            <td class="element lanthanoide">
+              <span class="dreieck"></span> Ce<span class="Ordnungszahl">1</span>
+            </td>
+            <td class="element lanthanoide">Pr<span class="Ordnungszahl">1</span></td>
+            <td class="element lanthanoide">Ne<span class="Ordnungszahl">1</span></td>
+            <td class="element lanthanoide">Pm<span class="Ordnungszahl">1</span></td>
+            <td class="element lanthanoide">Sm<span class="Ordnungszahl">1</span></td>
+            <td class="element lanthanoide">Eu<span class="Ordnungszahl">1</span></td>
+            <td class="element lanthanoide">Gd<span class="Ordnungszahl">1</span></td>
+            <td class="element lanthanoide">Tb<span class="Ordnungszahl">1</span></td>
+            <td class="element lanthanoide">Dy<span class="Ordnungszahl">1</span></td>
+            <td class="element lanthanoide">Ho<span class="Ordnungszahl">1</span></td>
+            <td class="element lanthanoide">Er<span class="Ordnungszahl">1</span></td>
+            <td class="element lanthanoide">Tm<span class="Ordnungszahl">1</span></td>
+            <td class="element lanthanoide">Yb<span class="Ordnungszahl">1</span></td>
+            <td class="element lanthanoide">Lu<span class="Ordnungszahl">1</span></td>
           </tr>
           <tr>
-            <td class="element actinoide"><span class="dreieck"></span> Th</td>
-            <td class="element actinoide">Pa</td>
-            <td class="element actinoide">U</td>
-            <td class="element actinoide">Np</td>
-            <td class="element actinoide">Pu</td>
-            <td class="element actinoide">Am</td>
-            <td class="element actinoide">Cm</td>
-            <td class="element actinoide">Bk</td>
-            <td class="element actinoide">Cf</td>
-            <td class="element actinoide">Es</td>
-            <td class="element actinoide">Fm</td>
-            <td class="element actinoide">Md</td>
-            <td class="element actinoide">No</td>
-            <td class="element actinoide">Lw</td>
+            <td class="element actinoide"><span class="dreieck"></span>Th <span class="Ordnungszahl">1</span></td>
+            <td class="element actinoide">Pa<span class="Ordnungszahl">1</span></td>
+            <td class="element actinoide">U<span class="Ordnungszahl">1</span></td>
+            <td class="element actinoide">Np<span class="Ordnungszahl">1</span></td>
+            <td class="element actinoide">Pu<span class="Ordnungszahl">1</span></td>
+            <td class="element actinoide">Am<span class="Ordnungszahl">1</span></td>
+            <td class="element actinoide">Cm<span class="Ordnungszahl">1</span></td>
+            <td class="element actinoide">Bk<span class="Ordnungszahl">1</span></td>
+            <td class="element actinoide">Cf<span class="Ordnungszahl">1</span></td>
+            <td class="element actinoide">Es<span class="Ordnungszahl">1</span></td>
+            <td class="element actinoide">Fm<span class="Ordnungszahl">1</span></td>
+            <td class="element actinoide">Md<span class="Ordnungszahl">1</span></td>
+            <td class="element actinoide">No<span class="Ordnungszahl">1</span></td>
+            <td class="element actinoide">Lw<span class="Ordnungszahl">1</span></td>
           </tr>
         </table>
       </div>
-      <img src="Bilder/chemie-hintergrund.jpg" class="pic1" />
+      <img src="Bilder/chemie-hintergrund.jpg" class="pic2" />
     </div>
     <script src="js/script.js"></script>
   </body>

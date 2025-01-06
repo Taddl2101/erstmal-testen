@@ -30,6 +30,7 @@ table:hover {
   box-shadow: 0 0 0.8vh rgba(170, 170, 170, 0.2);
   transition: transform 0.13s ease-in-out, box-shadow 0.3s ease-in-out;
 }
+
 .non-element {
   position: relative;
   width: 7.3vh;
@@ -45,6 +46,11 @@ table:hover {
   margin-top: 0.4vh;
 }
 .pic1 {
+  height: 30vh;
+  margin: 0 0 2vh 30vh;
+  display: none;
+}
+.pic2 {
   margin: 0.6vh 0 0 3vh;
   height: 15vh;
   width: 25vh;
@@ -55,9 +61,35 @@ table:hover {
   display: inline-block;
   width: 0vh;
   height: 0vh;
-  
+
   border-top: 1vh solid transparent;
   border-right: 0vh solid transparent;
   border-bottom: 1vh solid transparent;
   border-left: 1vh solid rgb(248, 248, 248);
+}
+
+.Ordnungszahl {
+  display: none;
+}
+
+.element:hover .Ordnungszahl {
+  display: block;
+  position: absolute;
+  bottom: 2.7vh;
+  left: 1vh;
+  font-size: 0.6em;
+  color: white;
+}
+
+.Fullname {
+  display: none;
+}
+
+.element:hover .Fullname {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 0.6em;
+  color: white;
 }

@@ -22,9 +22,4 @@ alles zu vh gemacht -> trotzdem Kacke
 --> % nutzen !!!
 Impressum ++ (js)
 
-# Samstag
-
-html seiten discussion
-schriftarten
-
 # zwischenspeicher

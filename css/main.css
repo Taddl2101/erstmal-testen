@@ -26,6 +26,10 @@ body {
   text-align: center;
   height: 7vh;
 }
+h1 {
+  margin: 1vh 0 0 0;
+}
+
 h3 {
   position: relative;
   width: 10vh;
@@ -43,4 +47,14 @@ h4 {
   text-align: left;
   font-size: 1.2em;
   font-weight: bold;
+}
+a {
+  color: rgb(168, 168, 168);
+  text-decoration: none;
+  top: -1vh;
+}
+p {
+  color: white;
+  text-align: left;
+  font-size: 1.2em;
 }
