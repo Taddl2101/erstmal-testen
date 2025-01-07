@@ -5,6 +5,7 @@
   height: 78vh;
   width: 141vh;
   border: 0.3vh solid white;
+  border-radius: 4px;
 }
 table {
   color: white;
@@ -31,10 +32,6 @@ table:hover {
   transition: transform 0.13s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-.element span {
-  display: none;
-}
-
 .element:hover .non-element {
   position: relative;
   width: 7.3vh;
@@ -45,19 +42,25 @@ table:hover {
   transform: scale(1.5);
   z-index: 1;
   box-shadow: 0 0 3vh rgba(170, 170, 170, 0.4);
+  border-radius: 5px;
 }
 .Abstand {
   margin-top: 0.4vh;
 }
-/*
+
 .pic1 {
   background-image: url(../Bilder/chemie.PNG);
-  margin: 0 0 2vh 30vh;
-  height: 12vh;
-  width: 90vh;
   display: block;
+  height: 12vh;
+  width: 86vh;
+  position: absolute;
+  z-index: 1;
+  left: 43%;
+  top: 2%;
+  transform: translate(-50%, 50%);
+  background-repeat: no-repeat;
 }
-  */
+
 .pic2 {
   margin: 0.6vh 0 0 3vh;
   height: 15vh;
@@ -75,6 +78,14 @@ table:hover {
   border-left: 1vh solid rgb(248, 248, 248);
 }
 
+.element .Ordnungszahl {
+  display: none;
+}
+
+.element .Fullname {
+  display: none;
+}
+
 .element:hover .Ordnungszahl {
   display: block;
   position: absolute;
@@ -86,8 +97,6 @@ table:hover {
 
 .element:hover .Fullname {
   display: block;
-  visibility: visible;
-  opacity: 1;
   position: absolute;
   top: 30%;
   left: 15%;

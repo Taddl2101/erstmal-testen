@@ -18,22 +18,13 @@ body {
   -moz-user-select: none;
   -ms-user-select: none;
 }
-.menue {
-  position: fixed;
-  margin: 0vh 1vh 1vh 1vh;
-  width: 23vh;
-  height: 78vh;
-  color: white;
-  border: 0.3vh solid white;
-  border-radius: 4px;
-}
 .banner {
   color: white;
   text-align: center;
   height: 7vh;
 }
 h1 {
-  margin: 3vh 0 0 0;
+  margin: 2vh 0 0 0;
 }
 
 h3 {
@@ -54,16 +45,17 @@ h4 {
   font-size: 1.2em;
   font-weight: bold;
 }
-a {
-  color: rgb(168, 168, 168);
-  text-decoration: none;
-  top: -1vh;
-}
 p {
   color: white;
   text-align: left;
   font-size: 1.2em;
 }
-#whitemodeBtn {
-  float: left;
+.rahmen {
+  position: fixed;
+  margin: 0 20vh 1vh 20vh;
+  padding: 0 1vh 0 1vh;
+  width: auto;
+  height: 80%;
+  border: 0.3vh solid white;
+  border-radius: 4px;
 }

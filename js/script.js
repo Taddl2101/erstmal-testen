@@ -98,6 +98,16 @@ function changeAlleColor() {
       "inset 0 0 8px 1px rgb(0, 99, 156), 0 0 5px 1px rgb(0, 99, 156)"
     );
   } else if (states.every((state) => window[state] === true)) {
+    alleElemente.forEach((element) => {
+      element.style.boxShadow = "";
+      element.classList.remove("highlight");
+    });
+
+    states.forEach((state) => {
+      if (window[state]) {
+        window[state] = !window[state];
+      }
+    });
   } else {
     alleElemente.forEach((element) => {
       element.style.boxShadow = "";

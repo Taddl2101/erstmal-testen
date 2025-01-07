@@ -3,301 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PSE</title>
-    <link rel="stylesheet" href="css/main.css" type="text/css" />
-    <link rel="stylesheet" href="css/maincontent.css" type="text/css" />
-    <link rel="stylesheet" href="css/farben.css" type="text/css" />
+    <title>PSE/WasIstDas</title>
+    <link rel="stylesheet" href="css/index.css" type="text/css" />
   </head>
   <body>
     <div class="banner">
       <h1>Das Periodensystem der Elemente</h1>
-      <a href="html/WasIstDasPSE.html">Was ist das PSE?</a> 
     </div>
     <div class="menue">
-      <button id="alleBtn" onclick="changeAlleColor()">Alle</button>
 
-      <button
-        id="alkalimetalleBtn"
-        onclick="changeColor('alkalimetalleActive', alkalimetalleElements,  'inset 0 0 8px 1px rgb(42, 233, 99), 0 0 5px 1px rgb(42, 233, 99)')"
-      >
-        Alkalimetalle
-      </button>
-
-      <button
-        id="erdalkalimetalleBtn"
-        onclick="changeColor('erdalkalimetalleActive', erdalkalimetalleElements, 'inset 0 0 8px 1px rgb(10, 172, 24), 0 0 5px 1px rgb(10, 172, 24)')"
-      >
-        Erdalkalimetalle
-      </button>
-
-      <button
-        id="übergangsmetalleBtn"
-        onclick="changeColor('übergangsmetalleActive' , übergangsmetalleElements, 'inset 0 0 8px 1px rgb(0, 50, 187), 0 0 5px 1px rgb(0, 50, 187)')"
-      >
-        Übergangsmetalle
-      </button>
-
-      <button
-        id="metalleBtn"
-        onclick="changeColor('metalleActive' , metalleElements , 'inset 0 0 8px 3px rgb(95, 0, 95), 0 0 5px 1px rgb(95, 0, 95)')"
-      >
-        Metalle
-      </button>
-
-      <button
-        id="halbmetalleBtn"
-        onclick="changeColor('halbmetalleActive' , halbmetalleElements, 'inset 0 0 8px 1px rgb(168, 11, 182), 0 0 5px 1px rgb(168, 11, 182)')"
-      >
-        Halbmetalle
-      </button>
-
-      <button
-        id="nichtmetalleBtn"
-        onclick="changeColor('nichtmetalleActive',nichtmetalleElements,'inset 0 0 8px 1px rgb(207, 15, 15), 0 0 5px 1px rgb(207, 15, 15)')"
-      >
-        Nichtmetalle
-      </button>
-
-      <button
-        id="halogeneBtn"
-        onclick="changeColor('halogeneActive', halogeneElements, 'inset 0 0 8px 1px rgb(253, 76, 106), 0 0 5px 1px rgb(253, 76, 106)')"
-      >
-        Halogene
-      </button>
-
-      <button
-        id="edelgaseBtn"
-        onclick="changeColor('edelgaseActive', edelgaseElements, 'inset 0 0 8px 1px rgb(247, 144, 187), 0 0 5px 1px rgb(247, 144, 187)')"
-      >
-        Edelgase
-      </button>
-
-      <button
-        id="lanthanoideBtn"
-        onclick="changeColor('lanthanoideActive',lanthanoideElements,'inset 0 0 8px 1px rgb(0, 99, 156), 0 0 5px 1px rgb(0, 99, 156)')"
-      >
-        Lanthanoide
-      </button>
-
-      <button
-        id="actinoideBtn"
-        onclick="changeColor('actinoideActive', actinoideElements, 'inset 0 0 8px 1px rgb(117, 190, 233), 0 0 5px 1px rgb(117, 190, 233)')"
-      >
-        Actinoide
-      </button>
-
-      <button id="resetBtn" onclick="reset()">Reset</button>
     </div>
-
     <div class="rahmen">
-      <span class="pic1"></span>
-      <!--Table für PSE-->
-      <div class="table">
-        <table>
-          <tr>
-            <th class="tr">1.Hg</th>
-            <th class="tr">2.Hg</th>
-            <th class="tr"></th>
-            <th class="tr"></th>
-            <th class="tr"></th>
-            <th class="tr"></th>
-            <th class="tr"></th>
-            <th class="tr"></th>
-            <th class="tr"></th>
-            <th class="tr"></th>
-            <th class="tr"></th>
-            <th class="tr"></th>
-            <th class="tr">3.Hg</th>
-            <th class="tr">4.Hg</th>
-            <th class="tr">5.Hg</th>
-            <th class="tr">6.Hg</th>
-            <th class="tr">7.Hg</th>
-            <th class="tr">8.Hg</th>
-          </tr>
-          <tr>
-            <td class="element nichtmetalle">
-              H<span class="Ordnungszahl">1</span><span class="Fullname">Wasserstoff</span>
-            </td>
-            <td class="non-element"></td>
-            <td class="non-element"></td>
-            <td class="non-element"></td>
-            <td class="non-element"></td>
-            <td class="non-element"></td>
-            <td class="non-element"></td>
-            <td class="non-element"></td>
-            <td class="non-element"></td>
-            <td class="non-element"></td>
-            <td class="non-element"></td>
-            <td class="non-element"></td>
-            <td class="non-element"></td>
-            <td class="non-element"></td>
-            <td class="non-element"></td>
-            <td class="non-element"></td>
-            <td class="non-element"></td>
-            <td class="element edelgase">He<span class="Ordnungszahl">2</span><span class="Fullname">Helium</span></td>
-          </tr>
-          <tr>
-            <td class="element alkalimetalle">Li<span class="Ordnungszahl">3</span><span class="Fullname">Lithium</span></td>
-            <td class="element erdalkalimetalle">Be<span class="Ordnungszahl">4</span><span class="Fullname">Beryllium</span></td>
-            <td class="non-element"></td>
-            <td class="non-element"></td>
-            <td class="non-element"></td>
-            <td class="non-element"></td>
-            <td class="non-element"></td>
-            <td class="non-element"></td>
-            <td class="non-element"></td>
-            <td class="non-element"></td>
-            <td class="non-element"></td>
-            <td class="non-element"></td>
-            <td class="element halbmetalle">B<span class="Ordnungszahl">5</span><span class="Fullname">Bor</span></td>
-            <td class="element nichtmetalle">C<span class="Ordnungszahl">6</span><span class="Fullname">Kohlenstoff</span></td>
-            <td class="element nichtmetalle">N<span class="Ordnungszahl">7</span><span class="Fullname">Stickstoff</span></td>
-            <td class="element nichtmetalle">O<span class="Ordnungszahl">8</span><span class="Fullname">Sauerstoff</span></td>
-            <td class="element halogene">F<span class="Ordnungszahl">9</span><span class="Fullname">Fluor</span></td>
-            <td class="element edelgase">Ne<span class="Ordnungszahl">10</span><span class="Fullname">Neon</span></td>
-          </tr>
-          <tr>
-            <td class="element alkalimetalle">Na<span class="Ordnungszahl">11</span><span class="Fullname">Natrium</span></td>
-            <td class="element erdalkalimetalle">Mg<span class="Ordnungszahl">12</span><span class="Fullname">Magnesium</span></td>
-            <td class="non-element"><b>1.Ng</b></td>
-            <td class="non-element"><b>2.Ng</b></td>
-            <td class="non-element"><b>3.Ng</b></td>
-            <td class="non-element"><b>4.Ng</b></td>
-            <td class="non-element"><b>5.Ng</b></td>
-            <td class="non-element"><b>6.Ng</b></td>
-            <td class="non-element"><b>7.Ng</b></td>
-            <td class="non-element"><b>8.Ng</b></td>
-            <td class="non-element"><b>9.Ng</b></td>
-            <td class="non-element"><b>10.Ng</b></td>
-            <td class="element metalle">Al<span class="Ordnungszahl">13</span><span class="Fullname">Aluminium</span></td>
-            <td class="element halbmetalle">Si<span class="Ordnungszahl">14</span><span class="Fullname">Silicium</span></td>
-            <td class="element nichtmetalle">P<span class="Ordnungszahl">15</span><span class="Fullname">Phosphor</span></td>
-            <td class="element nichtmetalle">S<span class="Ordnungszahl">16</span><span class="Fullname">Schwefel</span></td>
-            <td class="element halogene">Cl<span class="Ordnungszahl">17</span><span class="Fullname">Chlor</span></td>
-            <td class="element edelgase">Ar<span class="Ordnungszahl">18</span><span class="Fullname">Argon</span></td>
-          </tr>
-          <tr>
-            <td class="element alkalimetalle">K<span class="Ordnungszahl">19</span><span class="Fullname">Kalium</span></td>
-            <td class="element erdalkalimetalle">Ca<span class="Ordnungszahl">20</span><span class="Fullname">Calcium</span></td>
-            <td class="element übergangsmetalle">Sc<span class="Ordnungszahl">21</span><span class="Fullname">Scandium</span></td>
-            <td class="element übergangsmetalle">Ti<span class="Ordnungszahl">22</span><span class="Fullname">Titan</span></td>
-            <td class="element übergangsmetalle">V<span class="Ordnungszahl">23</span><span class="Fullname">Vanadium</span></td>
-            <td class="element übergangsmetalle">Cr<span class="Ordnungszahl">24</span><span class="Fullname">Chrom</span></td>
-            <td class="element übergangsmetalle">Mn<span class="Ordnungszahl">25</span><span class="Fullname">Mangan</span></td>
-            <td class="element übergangsmetalle">Fe<span class="Ordnungszahl">26</span><span class="Fullname">Eisen</span></td>
-            <td class="element übergangsmetalle">Co<span class="Ordnungszahl">27</span><span class="Fullname">Cobalt</span></td>
-            <td class="element übergangsmetalle">Ni<span class="Ordnungszahl">28</span><span class="Fullname">Nickel</span></td>
-            <td class="element übergangsmetalle">Cu<span class="Ordnungszahl">29</span><span class="Fullname">Kupfer</span></td>
-            <td class="element übergangsmetalle">Zn<span class="Ordnungszahl">30</span><span class="Fullname">Zink</span></td>
-            <td class="element metalle">Ga<span class="Ordnungszahl">31</span><span class="Fullname">Gallium</span></td>
-            <td class="element halbmetalle">Ge<span class="Ordnungszahl">32</span><span class="Fullname">Germanium</span></td>
-            <td class="element halbmetalle">As<span class="Ordnungszahl">33<span class="Fullname">Arsen</span></td>
-            <td class="element nichtmetalle">Se<span class="Ordnungszahl">34<span class="Fullname">Selen</span></td>
-            <td class="element halogene">Br<span class="Ordnungszahl">35<span class="Fullname">Brom</span></td>
-            <td class="element edelgase">Kr<span class="Ordnungszahl">36<span class="Fullname">Krypton</span></td>
-          </tr>
-          <tr>
-            <td class="element alkalimetalle">Rb<span class="Ordnungszahl">37</span><span class="Fullname">Rubidium</span></td>
-            <td class="element erdalkalimetalle">Sr<span class="Ordnungszahl">38</span><span class="Fullname">Strontium</span></td>
-            <td class="element übergangsmetalle">Y<span class="Ordnungszahl">39</span><span class="Fullname">Yttrium</span></td>
-            <td class="element übergangsmetalle">Zr<span class="Ordnungszahl">40</span><span class="Fullname">Zirconium</span></td>
-            <td class="element übergangsmetalle">Nb<span class="Ordnungszahl">41</span><span class="Fullname">Niobium</span></td>
-            <td class="element übergangsmetalle">Mo<span class="Ordnungszahl">42</span><span class="Fullname">Molybdan</span></td>
-            <td class="element übergangsmetalle">Tc<span class="Ordnungszahl">43</span><span class="Fullname">Technetium</span></td>
-            <td class="element übergangsmetalle">Ru<span class="Ordnungszahl">44</span><span class="Fullname">Ruthenium</span></td>
-            <td class="element übergangsmetalle">Rh<span class="Ordnungszahl">45</span><span class="Fullname">Rhodium</span></td>
-            <td class="element übergangsmetalle">Pd<span class="Ordnungszahl">46</span><span class="Fullname">Palladium</span></td>
-            <td class="element übergangsmetalle">Ag<span class="Ordnungszahl">47</span><span class="Fullname">Silber</span></td>
-            <td class="element übergangsmetalle">Cd<span class="Ordnungszahl">48</span><span class="Fullname">Cadmium</span></td>
-            <td class="element metalle">In<span class="Ordnungszahl">49</span><span class="Fullname">Indium</span></td>
-            <td class="element metalle">Sn<span class="Ordnungszahl">50</span><span class="Fullname">Zinn</span></td>
-            <td class="element halbmetalle">Sb<span class="Ordnungszahl">51</span><span class="Fullname">Antimon</span></td>
-            <td class="element halbmetalle">Te<span class="Ordnungszahl">52</span><span class="Fullname">Tellur</span></td>
-            <td class="element halogene">I<span class="Ordnungszahl">53</span><span class="Fullname">Iod</span></td>
-            <td class="element edelgase">Xe<span class="Ordnungszahl">54</span><span class="Fullname">Xenon</span></td>
-          </tr>
-          <tr>
-            <td class="element alkalimetalle">Cs<span class="Ordnungszahl">55</span><span class="Fullname">Caesium</span></td>
-            <td class="element erdalkalimetalle">B<span class="Ordnungszahl">56</span><span class="Fullname">Barium</span></td>
-            <td class="element lanthanoide">
-              La <span class="dreieck"></span><span class="Ordnungszahl">57</span><span class="Fullname">Lanthan</span></td>
-            <td class="element übergangsmetalle">Hf<span class="Ordnungszahl">72</span><span class="Fullname">Hafnium</span></td>
-            <td class="element übergangsmetalle">Ta<span class="Ordnungszahl">73</span><span class="Fullname">Tantal</span></td>
-            <td class="element übergangsmetalle">W<span class="Ordnungszahl">74</span><span class="Fullname">Wolfram</span></td>
-            <td class="element übergangsmetalle">Re<span class="Ordnungszahl">75</span><span class="Fullname">Rhenium</span></td>
-            <td class="element übergangsmetalle">Os<span class="Ordnungszahl">76</span><span class="Fullname">Osmium</span></td>
-            <td class="element übergangsmetalle">Ir<span class="Ordnungszahl">77</span><span class="Fullname">Iridium</span></td>
-            <td class="element übergangsmetalle">Pt<span class="Ordnungszahl">78</span><span class="Fullname">Platin</span></td>
-            <td class="element übergangsmetalle">Au<span class="Ordnungszahl">79</span><span class="Fullname">Gold</span></td>
-            <td class="element übergangsmetalle">Hg<span class="Ordnungszahl">80</span><span class="Fullname">Quecksilber</span></td>
-            <td class="element metalle">Ti<span class="Ordnungszahl">81</span><span class="Fullname">Thallium</span></td>
-            <td class="element metalle">Pb<span class="Ordnungszahl">82</span><span class="Fullname">Blei</span></td>
-            <td class="element metalle">Bi<span class="Ordnungszahl">83</span><span class="Fullname">Bismut</span></td>
-            <td class="element halbmetalle">Po<span class="Ordnungszahl">84</span><span class="Fullname">Polonium</span></td>
-            <td class="element halogene">At<span class="Ordnungszahl">85</span><span class="Fullname">Astat</span></td>
-            <td class="element edelgase">Rn<span class="Ordnungszahl">86</span><span class="Fullname">Radon</span></td>
-          </tr>
-          <tr>
-            <td class="element alkalimetalle">Fr<span class="Ordnungszahl">87</span><span class="Fullname">Francium</span></td>
-            <td class="element erdalkalimetalle">Ra<span class="Ordnungszahl">88</span><span class="Fullname">Radium</span></td>
-            <td class="element actinoide">
-              Ac <span class="dreieck"></span><span class="Ordnungszahl">89</span><span class="Fullname">Actinium</span></td>
-            <td class="element übergangsmetalle">Rf<span class="Ordnungszahl">104</span><span class="Fullname">Rutherfortium</span></td>
-            <td class="element übergangsmetalle">Db<span class="Ordnungszahl">105</span><span class="Fullname">Dubnium</span></td>
-            <td class="element übergangsmetalle">Sg<span class="Ordnungszahl">106</span><span class="Fullname">Seaborgium</span></td>
-            <td class="element übergangsmetalle">Bh<span class="Ordnungszahl">107</span><span class="Fullname">Bohrium</span></td>
-            <td class="element übergangsmetalle">Hs<span class="Ordnungszahl">108</span><span class="Fullname">Hassium</span></td>
-            <td class="element übergangsmetalle">Mt<span class="Ordnungszahl">109</span><span class="Fullname">Meltnerium</span></td>
-            <td class="element übergangsmetalle">Ds<span class="Ordnungszahl">110</span><span class="Fullname">Darmstadtium</span></td>
-            <td class="element übergangsmetalle">Rg<span class="Ordnungszahl">111</span><span class="Fullname">Roentgenium</span></td>
-            <td class="element übergangsmetalle">Cn<span class="Ordnungszahl">112</span><span class="Fullname">Copernicium</span></td>
-            <td class="element metalle">Nh<span class="Ordnungszahl">113</span><span class="Fullname">Nihonium</span></td>
-            <td class="element metalle">Fl<span class="Ordnungszahl">114</span><span class="Fullname">Flerovium</span></td>
-            <td class="element metalle">Mc<span class="Ordnungszahl">115</span><span class="Fullname">Moscovium</span></td>
-            <td class="element metalle">Lv<span class="Ordnungszahl">116</span><span class="Fullname">Livermorium</span></td>
-            <td class="element halogene">Ts<span class="Ordnungszahl">117</span><span class="Fullname">Tennes</span></td>
-            <td class="element edelgase">Og<span class="Ordnungszahl">118</span><span class="Fullname">Oqanesson</span></td>
-          </tr>
-        </table>
-        <table class="Abstand">
-          <tr>
-            <td class="element lanthanoide">
-              <span class="dreieck"></span> Ce<span class="Ordnungszahl">58</span><span class="Fullname">Cerium</span></td>
-            <td class="element lanthanoide">Pr<span class="Ordnungszahl">59</span><span class="Fullname">Praseodym</span></td>
-            <td class="element lanthanoide">Ne<span class="Ordnungszahl">60</span><span class="Fullname">Neodym</span></td>
-            <td class="element lanthanoide">Pm<span class="Ordnungszahl">61</span><span class="Fullname">Promethium</span></td>
-            <td class="element lanthanoide">Sm<span class="Ordnungszahl">62</span><span class="Fullname">Samarium</span></td>
-            <td class="element lanthanoide">Eu<span class="Ordnungszahl">63</span><span class="Fullname">Europium</span></td>
-            <td class="element lanthanoide">Gd<span class="Ordnungszahl">64</span><span class="Fullname">Gadolinum</span></td>
-            <td class="element lanthanoide">Tb<span class="Ordnungszahl">65</span><span class="Fullname">Terbium</span></td>
-            <td class="element lanthanoide">Dy<span class="Ordnungszahl">66</span><span class="Fullname">Dysprosium</span></td>
-            <td class="element lanthanoide">Ho<span class="Ordnungszahl">67</span><span class="Fullname">Holmium</span></td>
-            <td class="element lanthanoide">Er<span class="Ordnungszahl">68</span><span class="Fullname">Erbium</span></td>
-            <td class="element lanthanoide">Tm<span class="Ordnungszahl">69</span><span class="Fullname">Thulium</span></td>
-            <td class="element lanthanoide">Yb<span class="Ordnungszahl">70</span><span class="Fullname">Ytterbium</span></td>
-            <td class="element lanthanoide">Lu<span class="Ordnungszahl">71</span><span class="Fullname">Lutetium</span></td>
-          </tr>
-          <tr>
-            <td class="element actinoide">
-              <span class="dreieck"></span>Th <span class="Ordnungszahl">90</span><span class="Fullname">Thorium</span></td>
-            <td class="element actinoide">Pa<span class="Ordnungszahl">91</span><span class="Fullname">Protactinium</span></td>
-            <td class="element actinoide">U<span class="Ordnungszahl">92</span><span class="Fullname">Uran</span></td>
-            <td class="element actinoide">Np<span class="Ordnungszahl">93</span><span class="Fullname">Neptunium</span></td>
-            <td class="element actinoide">Pu<span class="Ordnungszahl">94</span><span class="Fullname">Plutonium</span></td>
-            <td class="element actinoide">Am<span class="Ordnungszahl">95</span><span class="Fullname">Americium</span></td>
-            <td class="element actinoide">Cm<span class="Ordnungszahl">96</span><span class="Fullname">Curium</span></td>
-            <td class="element actinoide">Bk<span class="Ordnungszahl">97</span><span class="Fullname">Berkelium</span></td>
-            <td class="element actinoide">Cf<span class="Ordnungszahl">98</span><span class="Fullname">Californium</span></td>
-            <td class="element actinoide">Es<span class="Ordnungszahl">99</span><span class="Fullname">Einsteinium</span></td>
-            <td class="element actinoide">Fm<span class="Ordnungszahl">100</span><span class="Fullname">Fermium</span></td>
-            <td class="element actinoide">Md<span class="Ordnungszahl">101</span><span class="Fullname">Medelevium</span></td>
-            <td class="element actinoide">No<span class="Ordnungszahl">102</span><span class="Fullname">Nobelium</span></td>
-            <td class="element actinoide">Lw<span class="Ordnungszahl">103</span><span class="Fullname">Lawrencium</span></td>
-          </tr>
-        </table>
-      </div>
-      <img src="Bilder/chemie-hintergrund.jpg" class="pic2" />
+      <p>
+        Das Periodensystem (Langfassung: Periodensystem der Elemente, abgekürzt
+        PSE) ist eine Liste aller chemischen Elemente, geordnet nach steigender
+        Kernladung (Ordnungszahl). Die Liste wird so in Zeilen (Perioden)
+        unterteilt, dass in jeder Spalte (Hauptgruppe/Nebengruppe) der so
+        entstehenden Tabelle Elemente mit ähnlichen chemischen Eigenschaften
+        stehen.
+      </p>
+      <p>
+        Das Periodensystem wurde 1869 unabhängig voneinander und fast identisch
+        von zwei Chemikern vorgestellt, zunächst von dem Russen Dmitri
+        Mendelejew und wenige Monate später von dem Deutschen Lothar Meyer.
+        Historisch war das Periodensystem für die Vorhersage unentdeckter
+        Elemente und deren Eigenschaften von Bedeutung, da die Eigenschaften
+        eines Elements näherungsweise vorhergesagt werden können, wenn die
+        Eigenschaften der umgebenden Elemente im Periodensystem bekannt sind.
+        Heute dient es vor allem als übersichtliches Organisationsschema der
+        Elemente und zur Ermittlung möglicher chemischer Reaktionen.
+      </p>
+      <button >
+        <a href="html/pse.html">Zum Periodensystem<a>
+      </button>
     </div>
-    <script src="js/script.js"></script>
   </body>
 </html>

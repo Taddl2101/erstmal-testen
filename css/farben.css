@@ -6,7 +6,7 @@ button {
   width: 15vh;
   margin: 1vh 0 0 4vh;
   transition: box-shadow 0.3s ease-in-out;
-  border-radius: 2px;
+  border-radius: 6px;
   overflow: hidden;
 }
 
