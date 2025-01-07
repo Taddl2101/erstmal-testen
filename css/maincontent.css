@@ -49,11 +49,15 @@ table:hover {
 .Abstand {
   margin-top: 0.4vh;
 }
+/*
 .pic1 {
-  height: 30vh;
+  background-image: url(../Bilder/chemie.PNG);
   margin: 0 0 2vh 30vh;
-  display: none;
+  height: 12vh;
+  width: 90vh;
+  display: block;
 }
+  */
 .pic2 {
   margin: 0.6vh 0 0 3vh;
   height: 15vh;
@@ -65,7 +69,6 @@ table:hover {
   display: inline-block;
   width: 0vh;
   height: 0vh;
-
   border-top: 1vh solid transparent;
   border-right: 0vh solid transparent;
   border-bottom: 1vh solid transparent;
@@ -86,8 +89,8 @@ table:hover {
   visibility: visible;
   opacity: 1;
   position: absolute;
-  top: 25%;
-  left: 25%;
-  font-size: 0.6em;
+  top: 30%;
+  left: 15%;
+  font-size: 0.38em;
   color: white;
 }
