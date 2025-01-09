@@ -13,3 +13,5 @@ uiverse.io - website für desgins von elementen
 # zwischenspeicher
 
 ../css/maincontent border-radius
+
+in .element opacity bei transition angeben
