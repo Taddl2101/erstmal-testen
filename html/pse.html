@@ -10,21 +10,33 @@
   </head>
   <body>
     <div class="banner">
-      <button id="whitemodeBtn">
-        <a href="../html/whitemode.html">Whitemode</a>
+      <button class="zurückBtn">
+        <a href="../index.html">
+          <div class="sign">
+            <svg viewBox="0 0 512 512">
+              <path
+                d="M377.9 105.9L500.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L377.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1-128 0c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM160 96L96 96c-17.7 0-32 14.3-32 32l0 256c0 17.7 14.3 32 32 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-64 0c-53 0-96-43-96-96L0 128C0 75 43 32 96 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32z"
+              ></path>
+            </svg>
+          </div>
+        </a>
       </button>
       <h1>Das Periodensystem der Elemente</h1>
     </div>
     <div class="menue">
       <!--Buttons-->
-      <button id="alleBtn" onclick="changeAlleColor()">Alle</button>
+      <button class="buttonelemente" id="alleBtn" onclick="changeAlleColor()">
+        Alle
+      </button>
       <button
+        class="buttonelemente"
         id="alkalimetalleBtn"
         onclick="changeColor('alkalimetalleActive', alkalimetalleElements,  'inset 0 0 8px 1px rgb(42, 233, 99), 0 0 5px 1px rgb(42, 233, 99)')"
       >
         Alkalimetalle
       </button>
       <button
+        class="buttonelemente"
         id="erdalkalimetalleBtn"
         onclick="changeColor('erdalkalimetalleActive', erdalkalimetalleElements, 'inset 0 0 8px 1px rgb(10, 172, 24), 0 0 5px 1px rgb(10, 172, 24)')"
       >
@@ -32,58 +44,67 @@
       </button>
 
       <button
+        class="buttonelemente"
         id="metalleBtn"
         onclick="changeColor('metalleActive' , metalleElements , 'inset 0 0 8px 3px rgb(95, 0, 95), 0 0 5px 1px rgb(95, 0, 95)')"
       >
         Metalle
       </button>
       <button
+        class="buttonelemente"
         id="halbmetalleBtn"
         onclick="changeColor('halbmetalleActive' , halbmetalleElements, 'inset 0 0 8px 1px rgb(168, 11, 182), 0 0 5px 1px rgb(168, 11, 182)')"
       >
         Halbmetalle
       </button>
       <button
+        class="buttonelemente"
         id="nichtmetalleBtn"
         onclick="changeColor('nichtmetalleActive',nichtmetalleElements,'inset 0 0 8px 1px rgb(207, 15, 15), 0 0 5px 1px rgb(207, 15, 15)')"
       >
         Nichtmetalle
       </button>
       <button
+        class="buttonelemente"
         id="halogeneBtn"
         onclick="changeColor('halogeneActive', halogeneElements, 'inset 0 0 8px 1px rgb(253, 76, 106), 0 0 5px 1px rgb(253, 76, 106)')"
       >
         Halogene
       </button>
       <button
+        class="buttonelemente"
         id="edelgaseBtn"
         onclick="changeColor('edelgaseActive', edelgaseElements, 'inset 0 0 8px 1px rgb(247, 144, 187), 0 0 5px 1px rgb(247, 144, 187)')"
       >
         Edelgase
       </button>
-
       <button
+        class="buttonelemente"
         id="übergangsmetalleBtn"
         onclick="changeColor('übergangsmetalleActive' , übergangsmetalleElements, 'inset 0 0 8px 1px rgb(0, 50, 187), 0 0 5px 1px rgb(0, 50, 187)')"
       >
         Übergangsmetalle
       </button>
       <button
+        class="buttonelemente"
         id="lanthanoideBtn"
         onclick="changeColor('lanthanoideActive',lanthanoideElements,'inset 0 0 8px 1px rgb(0, 99, 156), 0 0 5px 1px rgb(0, 99, 156)')"
       >
         Lanthanoide
       </button>
       <button
+        class="buttonelemente"
         id="actinoideBtn"
         onclick="changeColor('actinoideActive', actinoideElements, 'inset 0 0 8px 1px rgb(117, 190, 233), 0 0 5px 1px rgb(117, 190, 233)')"
       >
         Actinoide
       </button>
-      <button id="resetBtn" onclick="reset()">Reset</button>
+      <button class="buttonelemente" id="resetBtn" onclick="reset()">
+        Reset
+      </button>
     </div>
     <div class="rahmen">
-      <span class="pic1"></span>
+      <!--<span class="pic1"></span>-->
       <!--Table für PSE-->
       <div class="table">
         <table>
@@ -110,7 +131,8 @@
           <tr>
             <td class="element nichtmetalle">
               H<span class="Ordnungszahl">1</span
-              ><span class="Fullname">Wasserstoff</span>
+              ><span class="Fullname">Wasserstoff</span
+              ><span class="EN">2.2</span><span class="MolareMasse">1.008</span>
             </td>
             <td class="non-element"></td>
             <td class="non-element"></td>
@@ -375,7 +397,7 @@
               ><span class="Fullname">Caesium</span>
             </td>
             <td class="element erdalkalimetalle">
-              B<span class="Ordnungszahl">56</span
+              Ba<span class="Ordnungszahl">56</span
               ><span class="Fullname">Barium</span>
             </td>
             <td class="element lanthanoide">
@@ -641,9 +663,11 @@
           </tr>
         </table>
       </div>
-      <img src="../Bilder/chemie-hintergrund.jpg" class="pic2" />
+      <img src="../Bilder/atom.jpg" class="pic2" />
     </div>
-
+    <button class="whitemodeBtn">
+      <a href="../html/whitemode.html">Whitemode</a>
+    </button>
     <script src="../js/script.js"></script>
   </body>
 </html>

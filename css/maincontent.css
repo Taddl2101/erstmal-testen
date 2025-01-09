@@ -31,7 +31,6 @@ table:hover {
   box-shadow: 0 0 0.8vh rgba(170, 170, 170, 0.2);
   transition: transform 0.13s ease-in-out, box-shadow 0.3s ease-in-out;
 }
-
 .element:hover .non-element {
   position: relative;
   width: 7.3vh;
@@ -47,59 +46,76 @@ table:hover {
 .Abstand {
   margin-top: 0.4vh;
 }
-
 .pic1 {
-  background-image: url(../Bilder/chemie.PNG);
+  background-image: url(../Bilder/backround.JPG);
   display: block;
-  height: 12vh;
-  width: 86vh;
+  height: 40vh;
+  width: 70vh;
   position: absolute;
   z-index: 1;
-  left: 43%;
+  left: 50%;
   top: 2%;
-  transform: translate(-50%, 50%);
+  transform: translate(-50%);
   background-repeat: no-repeat;
 }
-
 .pic2 {
-  margin: 0.6vh 0 0 3vh;
+  margin: 0.6vh 0 0 4vh;
   height: 15vh;
-  width: 25vh;
-  border: 0.4vh solid black;
+  width: 22vh;
   border-radius: 0.3vh;
+  transform: rotateY("45");
 }
 .dreieck {
   display: inline-block;
   width: 0vh;
   height: 0vh;
-  border-top: 1vh solid transparent;
+  border-top: 0.7vh solid transparent;
   border-right: 0vh solid transparent;
-  border-bottom: 1vh solid transparent;
-  border-left: 1vh solid rgb(248, 248, 248);
+  border-bottom: 0.7vh solid transparent;
+  border-left: 0.7vh solid rgb(248, 248, 248);
 }
 
 .element .Ordnungszahl {
   display: none;
 }
-
-.element .Fullname {
-  display: none;
-}
-
 .element:hover .Ordnungszahl {
   display: block;
   position: absolute;
-  bottom: 2.7vh;
-  left: 1vh;
+  bottom: 31%;
+  left: 15%;
   font-size: 0.6em;
   color: white;
 }
-
+.element .Fullname {
+  display: none;
+}
 .element:hover .Fullname {
   display: block;
   position: absolute;
   top: 30%;
   left: 15%;
+  font-size: 0.38em;
+  color: white;
+}
+.element .EN {
+  display: none;
+}
+.element:hover .EN {
+  display: block;
+  position: absolute;
+  bottom: 0%;
+  left: 75%;
+  font-size: 0.38em;
+  color: white;
+}
+.element .MolareMasse {
+  display: none;
+}
+.element:hover .MolareMasse {
+  display: block;
+  position: absolute;
+  bottom: 30%;
+  left: 64%;
   font-size: 0.38em;
   color: white;
 }

@@ -2,21 +2,13 @@
 
 https://studyflix.de/chemie/pse-5803 Bild
 
-uiverse.com - website für desgins von elementen
-
-https://nachgeholfen.de/wp-content/uploads/2019/09/Depositphotos_255706026_l-2015.jpg
-gutes pse Bild
+uiverse.io - website für desgins von elementen
 
 # To-do
 
 - hell dunkel modus (js)
+- startseite
 - Formales: schriftarten,
-
-# Diskussion
-
-alles zu vh gemacht -> trotzdem Kacke
---> % nutzen !!!
-Impressum ++ (js)
 
 # zwischenspeicher
 
