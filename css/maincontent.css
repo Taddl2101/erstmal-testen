@@ -108,10 +108,66 @@ table:hover {
   font-size: 0.38em;
   color: white;
 }
-.element .MolareMasse {
+.element .Atommasse {
   display: none;
 }
-.element:hover .MolareMasse {
+.element:hover .Atommasse {
+  display: block;
+  position: absolute;
+  bottom: 30%;
+  left: 64%;
+  font-size: 0.38em;
+  color: white;
+}
+
+/*Beispiel*/
+
+.beispiel {
+  font-size: 0.4em;
+}
+.NameBeispiel {
+  font-size: 1.4em;
+}
+.NameBeispiel:hover {
+  font-size: 0.4em;
+}
+.element .OrdnungszahlBeispiel {
+  display: none;
+}
+.element:hover .OrdnungszahlBeispiel {
+  display: block;
+  position: absolute;
+  bottom: 31%;
+  left: 15%;
+  font-size: 0.6em;
+  color: white;
+}
+.element .FullnameBeispiel {
+  display: none;
+}
+.element:hover .FullnameBeispiel {
+  display: block;
+  position: absolute;
+  top: 30%;
+  left: 15%;
+  font-size: 0.38em;
+  color: white;
+}
+.element .ENBeispiel {
+  display: none;
+}
+.element:hover .ENBeispiel {
+  display: block;
+  position: absolute;
+  bottom: 0%;
+  left: 75%;
+  font-size: 0.38em;
+  color: white;
+}
+.element .AtommasseBeispiel {
+  display: none;
+}
+.element:hover .AtommasseBeispiel {
   display: block;
   position: absolute;
   bottom: 30%;
