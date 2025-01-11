@@ -7,7 +7,8 @@ uiverse.io - website für desgins von elementen
 
 - hell dunkel modus (js)
 - startseite
-- Formales: schriftarten,
+- Formales: schriftarten
+- responsive design
 
 # zwischenspeicher
 
