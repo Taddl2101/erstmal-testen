@@ -63,10 +63,13 @@ a {
 .zumPSE {
   background-color: black;
   text-align: center;
-  padding: 5vh 8vh;
-  margin: 3vh 0 2vh 50vh;
+  padding: 3vh 7vh;
   border: 0.2vh solid white;
   border-radius: 4px;
+  position: absolute;
+  transform: translate(-50%, 50%);
+  left: 50%;
+  top: 60%;
 }
 ol {
   color: white;
