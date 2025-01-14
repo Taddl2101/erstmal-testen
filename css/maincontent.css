@@ -42,6 +42,7 @@ table:hover {
   z-index: 1;
   box-shadow: 0 0 3vh rgba(170, 170, 170, 0.4);
   border-radius: 5px;
+  transition: all 0.3s ease;
 }
 .Abstand {
   margin-top: 0.4vh;
@@ -74,49 +75,66 @@ table:hover {
   border-bottom: 0.7vh solid transparent;
   border-left: 0.7vh solid rgb(248, 248, 248);
 }
-.element .Ordnungszahl {
-  display: none;
-}
-.element:hover .Ordnungszahl {
+
+.element .Ordnungszahl,
+.element .Fullname,
+.element .EN,
+.element .Atommasse {
   display: block;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+}
+
+.element:hover .Ordnungszahl {
   position: absolute;
   bottom: 31%;
   left: 15%;
   font-size: 0.6em;
   color: white;
+  visibility: visible;
+  opacity: 1;
+  height: auto;
+  width: auto;
 }
-.element .Fullname {
-  display: none;
-}
+
 .element:hover .Fullname {
-  display: block;
   position: absolute;
   top: 30%;
   left: 15%;
   font-size: 0.38em;
   color: white;
+  visibility: visible;
+  opacity: 1;
+  height: auto;
+  width: auto;
 }
-.element .EN {
-  display: none;
-}
+
 .element:hover .EN {
-  display: block;
   position: absolute;
   bottom: 0%;
   left: 75%;
   font-size: 0.38em;
   color: white;
+  visibility: visible;
+  opacity: 1;
+  height: auto;
+  width: auto;
 }
-.element .Atommasse {
-  display: none;
-}
+
 .element:hover .Atommasse {
-  display: block;
   position: absolute;
   bottom: 30%;
   left: 64%;
   font-size: 0.38em;
   color: white;
+  visibility: visible;
+  opacity: 1;
+  height: auto;
+  width: auto;
 }
 
 /*Beispiel*/
@@ -124,83 +142,106 @@ table:hover {
 .beispiel {
   font-size: 0.5em;
 }
-.NameBeispiel:hover {
-  font-size: 0.4em;
+
+.element:hover .beispiel {
+  font-size: 0.8em;
 }
-.element .OrdnungszahlBeispiel {
-  display: none;
-}
-.element:hover .OrdnungszahlBeispiel {
+
+.element .OrdnungszahlBeispiel,
+.element .OrdnungszahlBeispiel2,
+.element .FullnameBeispiel,
+.element .ENBeispiel,
+.element .ENBeispiel2,
+.element .AtommasseBeispiel,
+.element .AtommasseBeispiel2 {
   display: block;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+.element:hover .OrdnungszahlBeispiel {
   position: absolute;
   bottom: 31%;
   left: 15%;
   font-size: 0.6em;
   color: white;
+  opacity: 1;
+  height: auto;
+  width: auto;
+  visibility: visible;
 }
-.element .OrdnungszahlBeispiel2 {
-  display: none;
-}
+
 .element:hover .OrdnungszahlBeispiel2 {
-  display: block;
   position: absolute;
   bottom: 20%;
   left: 16%;
   font-size: 0.6em;
   color: white;
+  height: auto;
+  width: auto;
+  opacity: 1;
+  visibility: visible;
 }
-.element .FullnameBeispiel {
-  display: none;
-}
+
 .element:hover .FullnameBeispiel {
-  display: block;
   position: absolute;
   top: 30%;
   left: 15%;
   font-size: 0.38em;
   color: white;
+  height: auto;
+  width: auto;
+  opacity: 1;
+  visibility: visible;
 }
-.element .ENBeispiel {
-  display: none;
-}
+
 .element:hover .ENBeispiel {
-  display: block;
   position: absolute;
   bottom: 3%;
   left: 75%;
   font-size: 0.38em;
   color: white;
+  height: auto;
+  width: auto;
+  opacity: 1;
+  visibility: visible;
 }
-.element .ENBeispiel2 {
-  display: none;
-}
+
 .element:hover .ENBeispiel2 {
-  display: block;
   position: absolute;
   top: 8%;
   left: 75%;
   font-size: 0.38em;
   color: white;
+  height: auto;
+  width: auto;
+  opacity: 1;
+  visibility: visible;
 }
-.element .AtommasseBeispiel {
-  display: none;
-}
+
 .element:hover .AtommasseBeispiel {
-  display: block;
   position: absolute;
   bottom: 30%;
   left: 64%;
   font-size: 0.38em;
   color: white;
+  height: auto;
+  width: auto;
+  opacity: 1;
+  visibility: visible;
 }
-.element .AtommasseBeispiel2 {
-  display: none;
-}
+
 .element:hover .AtommasseBeispiel2 {
-  display: block;
   position: absolute;
   bottom: 23%;
   left: 64%;
   font-size: 0.38em;
   color: white;
+  height: auto;
+  width: auto;
+  opacity: 1;
+  visibility: visible;
 }
