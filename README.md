@@ -14,4 +14,4 @@ uiverse.io - website für desgins von elementen
 
 ../css/maincontent border-radius
 
-in .element opacity bei transition angeben
+in .element:hover transtion angeben
