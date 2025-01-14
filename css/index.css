@@ -1,35 +1,31 @@
 body {
-  background-color: black;
-  background: linear-gradient(
-    hsl(0, 0%, 5%) 0%,
-    hsl(0, 0%, 10%) 20%,
-    hsl(0, 0%, 20%) 40%,
-    hsl(0, 0%, 30%) 80%,
-    hsl(0, 0%, 37%) 100%
-  );
+  background-color: hsl(0, 0%, 33%);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover;
+  background-image: url(../Bilder/ownpse.PNG);
+  background-size: contain;
+  opacity: 1;
   margin: 0;
   padding: 0;
-
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
 }
+
 .banner {
   color: white;
   text-align: center;
   height: 7vh;
 }
 h1 {
+  font-size: 3em;
   margin: 2vh 0 0 0;
 }
 h2 {
   color: white;
-  background-color: rgb(41, 41, 41);
-  border: 0.5vh solid black;
+  background-color: rgb(0, 0, 0);
+  border: 0.3vh solid rgb(78, 78, 78);
   border-radius: 4px;
   text-align: center;
 }
@@ -47,10 +43,10 @@ p {
 }
 .rahmen {
   position: fixed;
-  margin: 0 20vh 1vh 20vh;
+  margin: 5vh 20vh 1vh 20vh;
   padding: 0 1vh 0 1vh;
   width: auto;
-  height: 80%;
+  height: 65%;
   border: 0.3vh solid white;
   border-radius: 4px;
 }
@@ -69,7 +65,7 @@ a {
   position: absolute;
   transform: translate(-50%, 50%);
   left: 50%;
-  top: 60%;
+  top: 73%;
 }
 ol {
   color: white;
