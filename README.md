@@ -5,10 +5,11 @@ uiverse.io - website für desgins von elementen
 
 # To-do
 
-- hell dunkel modus (js)
 - startseite
 - Formales: schriftarten
+- mayby icon
 - responsive design
+- hell dunkel modus (js)
 
 # zwischenspeicher
 
