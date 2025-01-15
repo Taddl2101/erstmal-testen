@@ -1,5 +1,5 @@
 .rahmen {
-  position: fixed;
+  position: relative;
   margin: 0 2vh 1vh 25vh;
   padding: 0 1vh 0 1vh;
   height: 78vh;

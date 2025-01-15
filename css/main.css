@@ -17,22 +17,28 @@ body {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
+
+  font-family: "Arvo", Arial, Helvetica, sans-serif;
 }
 .menue {
-  position: fixed;
-  margin: 0vh 1vh 1vh 1vh;
+  position: absolute;
+  margin: 0 1vh 0 2vh;
   width: 23vh;
   height: 78vh;
   color: white;
   border: 0.3vh solid white;
   border-radius: 4px;
 }
+
 .banner {
+  display: flex;
+  justify-content: center;
   color: white;
-  text-align: center;
-  height: 7vh;
+  margin-bottom: 4vh;
 }
+
 h1 {
+  font-size: 3rem;
   margin: 3vh 0 0 0;
 }
 
@@ -82,7 +88,7 @@ p {
 }
 .zurückBtn {
   left: 2vh;
-  bottom: 2vh;
+  top: 2vh;
   padding: 3vh 3vh;
   border: 2px solid #1f1f1f;
   border-radius: 6px;
@@ -92,7 +98,7 @@ p {
   cursor: pointer;
   transition: all 0.4s ease;
   outline: none;
-  position: relative;
+  position: fixed;
   overflow: hidden;
   font-weight: bold;
   float: left;
@@ -112,6 +118,7 @@ p {
   transform: scale(0);
   transition: transform 0.5s ease;
 }
+
 .zurückBtn:hover::after {
   transform: scale(4);
 }
@@ -119,6 +126,7 @@ p {
   border-color: #666666;
   background: #000000;
 }
+
 .sign {
   width: 100%;
   transition-duration: 0.3s;
