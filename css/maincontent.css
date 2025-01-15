@@ -61,13 +61,7 @@ table:hover {
   transform: translate(-50%);
   background-repeat: no-repeat;
 }
-.pic2 {
-  margin: 0.6vh 0 0 4vh;
-  height: 15vh;
-  width: 22vh;
-  border-radius: 0.3vh;
-  transform: rotateY("45");
-}
+
 .dreieck {
   display: inline-block;
   width: 0vh;
@@ -81,7 +75,8 @@ table:hover {
 .element .Ordnungszahl,
 .element .Fullname,
 .element .EN,
-.element .Atommasse {
+.element .Atommasse,
+.element .Atommasse2 {
   display: block;
   visibility: hidden;
   opacity: 0;
@@ -127,7 +122,8 @@ table:hover {
   width: auto;
 }
 
-.element:hover .Atommasse {
+.element:hover .Atommasse,
+.element:hover .Atommasse2 {
   position: absolute;
   bottom: 30%;
   left: 60%;
@@ -137,6 +133,10 @@ table:hover {
   opacity: 1;
   height: auto;
   width: auto;
+}
+
+.element:hover .Atommasse2 {
+  left: 73%;
 }
 
 /*Beispiel*/
