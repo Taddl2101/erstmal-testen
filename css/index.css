@@ -30,6 +30,7 @@ h2 {
   border-radius: 4px;
   text-align: center;
   padding: 1vh;
+  letter-spacing: 0.2vh;
 }
 h4 {
   color: white;
@@ -58,6 +59,7 @@ a {
   font-weight: bold;
   text-decoration: none;
   font-size: 1.5em;
+  letter-spacing: 0.2vh;
 }
 .zumPSE {
   background-color: rgba(41, 41, 41, 0.808);
@@ -92,7 +94,6 @@ ol {
   z-index: -1;
 }
 
-
 @media (max-width: 768px) {
   .menue {
     width: 90%;
@@ -101,11 +102,14 @@ ol {
     margin: 2vh auto;
   }
 
-  h3, h4, p {
+  h3,
+  h4,
+  p {
     font-size: 1em;
   }
 
-  .whitemodeBtn, .zurückBtn {
+  .whitemodeBtn,
+  .zurückBtn {
     width: 80%;
     margin: 1vh auto;
     float: none;
@@ -128,7 +132,8 @@ ol {
     padding: 1vh;
   }
 
-  .whitemodeBtn, .zurückBtn {
+  .whitemodeBtn,
+  .zurückBtn {
     font-size: 1em;
     padding: 1vh;
   }

@@ -38,7 +38,7 @@ body {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 3em;
   margin: 3vh 0 0 0;
 }
 
@@ -75,7 +75,7 @@ p {
   right: 2vh;
   bottom: 9vh;
   padding: 1.5vh 2vh;
-  border: 2px solid #1f1f1f;
+  border: 0.3vh solid #1f1f1f;
   border-radius: 6px;
   background-color: #000000;
   color: #ffffff;
@@ -86,11 +86,14 @@ p {
   position: relative;
   float: right;
 }
+.whitemodeBtn:hover {
+  color: rgb(155, 155, 155);
+}
 .zurückBtn {
   left: 2vh;
   top: 2vh;
   padding: 3vh 3vh;
-  border: 2px solid #1f1f1f;
+  border: 0.3vh solid #1f1f1f;
   border-radius: 6px;
   background-color: #000000;
   color: #ffffff;
