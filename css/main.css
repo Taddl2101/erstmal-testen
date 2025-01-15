@@ -20,6 +20,7 @@ body {
 
   font-family: "Arvo", Arial, Helvetica, sans-serif;
 }
+
 .menue {
   position: absolute;
   margin: 0 1vh 0 2vh;
@@ -72,8 +73,6 @@ p {
 }
 
 .whitemodeBtn {
-  right: 2vh;
-  bottom: 9vh;
   padding: 1.5vh 2vh;
   border: 2px solid #1f1f1f;
   border-radius: 6px;
@@ -83,8 +82,10 @@ p {
   cursor: pointer;
   transition: all 0.4s ease;
   outline: none;
-  position: relative;
+  position: fixed;
   float: right;
+  top: 2vh;
+  right: 2vh;
 }
 .zurückBtn {
   left: 2vh;

@@ -1,6 +1,6 @@
 .rahmen {
   position: relative;
-  margin: 0 2vh 1vh 25vh;
+  margin: 0 2vh 1vh 26vh;
   padding: 0 1vh 0 1vh;
   height: 78vh;
   width: 141vh;
@@ -16,6 +16,7 @@ table {
 table:hover {
   cursor: default;
 }
+
 .tr {
   width: 7.3vh;
   height: 5vh;
@@ -30,6 +31,7 @@ table:hover {
   line-height: 7.3vh;
   box-shadow: 0 0 0.8vh rgba(170, 170, 170, 0.2);
   transition: transform 0.13s ease-in-out, box-shadow 0.3s ease-in-out;
+  overflow: hidden;
 }
 .element:hover .non-element {
   position: relative;
@@ -94,7 +96,7 @@ table:hover {
   bottom: 31%;
   left: 15%;
   font-size: 0.6em;
-  color: white;
+
   visibility: visible;
   opacity: 1;
   height: auto;
@@ -106,7 +108,7 @@ table:hover {
   top: 30%;
   left: 15%;
   font-size: 0.38em;
-  color: white;
+
   visibility: visible;
   opacity: 1;
   height: auto;
@@ -118,7 +120,7 @@ table:hover {
   bottom: 0%;
   left: 75%;
   font-size: 0.38em;
-  color: white;
+
   visibility: visible;
   opacity: 1;
   height: auto;
@@ -128,9 +130,9 @@ table:hover {
 .element:hover .Atommasse {
   position: absolute;
   bottom: 30%;
-  left: 64%;
+  left: 60%;
   font-size: 0.38em;
-  color: white;
+
   visibility: visible;
   opacity: 1;
   height: auto;
@@ -160,6 +162,7 @@ table:hover {
   height: 0;
   width: 0;
   visibility: hidden;
+  color: white;
 }
 
 .element:hover .OrdnungszahlBeispiel {
@@ -167,7 +170,7 @@ table:hover {
   bottom: 31%;
   left: 15%;
   font-size: 0.6em;
-  color: white;
+
   opacity: 1;
   height: auto;
   width: auto;
@@ -179,7 +182,7 @@ table:hover {
   bottom: 20%;
   left: 16%;
   font-size: 0.6em;
-  color: white;
+
   height: auto;
   width: auto;
   opacity: 1;
@@ -191,7 +194,7 @@ table:hover {
   top: 30%;
   left: 15%;
   font-size: 0.38em;
-  color: white;
+
   height: auto;
   width: auto;
   opacity: 1;
@@ -203,7 +206,7 @@ table:hover {
   bottom: 3%;
   left: 75%;
   font-size: 0.38em;
-  color: white;
+
   height: auto;
   width: auto;
   opacity: 1;
@@ -215,7 +218,7 @@ table:hover {
   top: 8%;
   left: 75%;
   font-size: 0.38em;
-  color: white;
+
   height: auto;
   width: auto;
   opacity: 1;
@@ -227,7 +230,7 @@ table:hover {
   bottom: 30%;
   left: 64%;
   font-size: 0.38em;
-  color: white;
+
   height: auto;
   width: auto;
   opacity: 1;
@@ -239,7 +242,7 @@ table:hover {
   bottom: 23%;
   left: 64%;
   font-size: 0.38em;
-  color: white;
+
   height: auto;
   width: auto;
   opacity: 1;

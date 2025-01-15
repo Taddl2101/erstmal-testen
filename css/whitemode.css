@@ -1,0 +1,100 @@
+body {
+  background: linear-gradient(
+    hsl(0, 0%, 95%) 0%,
+    hsl(0, 0%, 90%) 20%,
+    hsl(0, 0%, 80%) 40%,
+    hsl(0, 0%, 70%) 80%,
+    hsl(0, 0%, 63%) 100%
+  );
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
+  color: black;
+  margin: 0;
+  padding: 0;
+}
+
+.menue {
+  color: black;
+  border: 0.3vh solid black;
+}
+
+.banner {
+  color: black;
+}
+
+h1,
+h3,
+h4,
+p,
+a {
+  color: black;
+}
+
+.whitemodeBtn,
+.zurückBtn {
+  background-color: #ffffff;
+  color: #000000;
+  border: 2px solid #e0e0e0;
+}
+
+.element {
+  background-color: white;
+  color: black;
+}
+
+.buttonelemente {
+  color: black;
+  background-color: white;
+}
+
+.beispiel:hover {
+  box-shadow: inset 0 0 10px 1px rgb(0, 0, 0), 0 0 15px 1px rgb(0, 0, 0);
+}
+
+.element .OrdnungszahlBeispiel,
+.element .OrdnungszahlBeispiel2,
+.element .FullnameBeispiel,
+.element .ENBeispiel,
+.element .ENBeispiel2,
+.element .AtommasseBeispiel,
+.element .AtommasseBeispiel2 {
+  color: black;
+}
+
+.element .Ordnungszahl,
+.element .Fullname,
+.element .EN,
+.element .Atommasse {
+  color: black;
+}
+
+.zurückBtn {
+  background-color: white;
+  color: black;
+}
+
+.zurückBtn:hover {
+  border-color: #e2e2e2;
+  background: #ffffff;
+}
+
+.sign svg path {
+  fill: black;
+}
+.zurückBtn::after {
+  background: radial-gradient(
+    circle,
+    rgba(56, 56, 56, 0.25) 0%,
+    rgba(255, 255, 255, 0) 70%
+  );
+}
+
+table {
+  color: black;
+}
+
+.rahmen {
+  border-color: black;
+}
