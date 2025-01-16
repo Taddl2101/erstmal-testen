@@ -7,6 +7,7 @@ body {
   height: 100%;
   font-family: "Jersey 15", Arial, Helvetica, sans-serif;
   text-shadow: 2px 2px black;
+  overflow: hidden;
 }
 
 .banner {
@@ -35,21 +36,21 @@ h2 {
 h4 {
   color: white;
   text-align: left;
-  font-size: 1.5rem;
+  font-size: 1.5rrem;
   font-weight: bold;
 }
 p {
   color: white;
   text-align: left;
   font-size: 1.5rem;
-  margin: 1vh;
+  margin: 0.5vh;
 }
 .rahmen {
   position: fixed;
-  margin: 5vh 20vh 1vh 20vh;
+  margin: 0vh 20vh 1vh 20vh;
   padding: 0 1vh 0 1vh;
   width: auto;
-  height: 73%;
+  height: auto;
   border: 0.3vh solid white;
   border-radius: 4px;
   background-color: rgba(110, 110, 110, 0.274);
@@ -58,7 +59,7 @@ a {
   color: white;
   font-weight: bold;
   text-decoration: none;
-  font-size: 1.5em;
+  font-size: 1.5rem;
   letter-spacing: 0.2vh;
 }
 .zumPSE {
@@ -66,8 +67,8 @@ a {
   text-align: center;
   padding: 3vh 7vh;
   border: 0.2vh solid white;
+  position: fixed;
   border-radius: 4px;
-  position: absolute;
   transform: translate(-50%, 50%);
   left: 50%;
   top: 80%;
